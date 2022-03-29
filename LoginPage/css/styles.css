@@ -77,8 +77,8 @@
 }
 
 body {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
-  font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -235,11 +235,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #E6CCBE;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #2A2B2A;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3033,7 +3033,7 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  color: #212529;
+  color: bisque;
 }
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
@@ -3045,14 +3045,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: #A07178;
+  background-color: #E6CCBE;
+  border-color: #A07178;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #2A2B2A;
+  border-color: #2A2B2A;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -4533,6 +4533,8 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  background-color: #A07178;
+  color: #E6CCBE;
 }
 .card > hr {
   margin-right: 0;
@@ -4948,7 +4950,7 @@ textarea.form-control-lg {
 }
 
 .alert-primary {
-  color: #084298;
+  color: rgba(78, 16, 16, 0.863);
   background-color: #cfe2ff;
   border-color: #b6d4fe;
 }
@@ -6736,7 +6738,7 @@ textarea.form-control-lg {
   display: block !important;
 }
 
-.d-grid {
+.d-grid {;
   display: grid !important;
 }
 
@@ -7823,7 +7825,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #E6CCBE !important;
 }
 
 .bg-secondary {
@@ -7853,7 +7855,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #A07178 !important;
 }
 
 .bg-dark {
@@ -11692,10 +11694,132 @@ body {
   content: " ";
   display: table;
 }
-
+.bot{
+  background-color: #E6CCBE ;
+  color: #A07178;
+}
 .btn-datatable {
   height: 20px !important;
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
+}
+footer{
+  flex-direction: row;
+  margin-top: 50px;
+}
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+.infoAll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infoAll p{
+  color:#2A2B2A;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.us {
+  text-align: center;
+  font-family: "jack";
+  font-size: 1.5em;
+  padding: 20px;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #2A2B2A;
+}
+
+
+.telephone{
+  margin-right: 10px;
+  height: 45px;
+  width:45px;
+  position: relative;
+  color:#2A2B2A;
+  font-size: 1.5em;
+}
+.num{
+  display: flex;
+  text-align: center;
+  font-family: "jack";
+}
+.time{
+  margin-right: 10px;
+  height: 35px;
+  width:35px;
+  position: relative;
+  color:#2A2B2A;
+  font-size: 1.5em;
+}
+.sched{
+  display: flex;
+ 
+  font-family: "jack";
+}
+.loc{
+  margin-right: 10px;
+  height: 45px;
+  width:45px;
+  font-size: 1.5em;
+  color:#2A2B2A;
+}
+
+.spot{
+  display: flex;
+  font-family: "jack";
+}
+.em{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+  
+}
+.email{
+  height: 60px;
+  width: 60px;
+  position: relative;
+  font-size: 2em;
+  color:#2A2B2A;
+}
+.mymail{
+  display: flex;
+  position: relative;
+  font-size: 1.5em;
+  font-family: "jack";
+  width: fit-content;
+  color: #2A2B2A;
+}
+.em p{ 
+  font-family: 'Josefin Sans', sans-serif;
+}
+.social{
+  display:flex;
+  height: 100px;
+  width: fit-content;
+  margin-right: 100px;
+  
+}
+
+
+.social a{
+  display: flex;
+  position: relative;
+  font-size:3.5em;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #2A2B2A;
+}
+
+.social a:hover,.em a:hover{
+  color: #E6CCBE;
+  text-decoration: none;
+}
+.social a:active,.em a:active{
+  color: white;
+  text-decoration: none;
 }
