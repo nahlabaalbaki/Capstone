@@ -45,16 +45,32 @@
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
-                                                        <label for="inputPassword">Password</label>
+                                                        <input class="form-control" id="inputUsername" type="text" placeholder="Create a username" />
+                                                        <label for="inputUsername">Username</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
-                                                        <label for="inputPasswordConfirm">Confirm Password</label>
+                                                        <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
+                                                        <label for="inputPassword">Password</label>
                                                     </div>
                                                 </div>
+                                                
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputPhone" type="text" placeholder="Your phone number" />
+                                                        <label for="inputPhone">Phone Number</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 mb-md-0">
+                                                        <input class="form-control" id="inputAddress" type="text" placeholder="Your address" />
+                                                        <label for="inputAddress">Address</label>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
                                             <div class="mt-4 mb-0">
                                                 <div class="d-grid"><a class="btn bot btn-block" href="login.php">Create Account</a></div>
