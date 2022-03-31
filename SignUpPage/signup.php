@@ -1,3 +1,8 @@
+<?php
+
+include("../connection.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -73,12 +78,12 @@
                                                 
                                             </div>
                                             <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn bot btn-block" type="submit">Create Account</a></div>
+                                                <div class="d-grid"><button class="btn bot btn-block"  name = 'submit' type='submit'>Create Account</button></div>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="login.html">Have an account? Go to login</a></div>
+                                        <div class="small"><a href="login.php">Have an account? Go to login</a></div>
                                     </div>
                                 </div>
                             </div>
