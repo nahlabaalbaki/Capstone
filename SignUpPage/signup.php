@@ -73,7 +73,7 @@
                                                 
                                             </div>
                                             <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn bot btn-block" href="login.php">Create Account</a></div>
+                                                <div class="d-grid"><a class="btn bot btn-block" type="submit">Create Account</a></div>
                                             </div>
                                         </form>
                                     </div>

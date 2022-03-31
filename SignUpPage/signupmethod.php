@@ -18,13 +18,13 @@ if(isset($_POST["last_name"]) && $_POST["last_name"] != ""){
 	die("No access");
 
 }
-/*
+
 if(isset($_POST["username"]) && $_POST["username"] != ""){
 	$username = $_POST["username"];
 }else{
 	die("No access");
 }
-*/
+
 if(isset($_POST["password"]) && $_POST["password"] != ""){
 	$password = hash("sha256", $_POST["password"]);
 	
@@ -38,9 +38,9 @@ if(isset($_POST["email"]) && $_POST["email"] != ""){
 }else{
 	die("No access");
 }
-/*
-if(isset($_POST["phone_nb"]) && isset($_POST["area_code"]) && $_POST["phone_nb"] !="" && $_POST["area_code"] !=""){
-	$phone_nb = $_POST["area_code"]." ".$_POST["phone_nb"];
+
+if(isset($_POST["phone_nb"]) && $_POST["phone_nb"] !=""){
+	$phone_nb =$_POST["phone_nb"];
 }else{
 	die("No access");
 }
@@ -53,18 +53,11 @@ if(isset($_POST["address"]) && $_POST["address"] != ""){
 	die("No access");
 }
 
-/*
-if(isset($_POST["birth_date"]) && $_POST["birth_date"] != ""){
-	$DOB = $_POST["birth_date"];
-}else{
-	die("No access");
-} **/
 
 
 
-	//$mysql = $connection->prepare("INSERT INTO owners(first_name,last_name,username,password,phone_nb,email,address) VALUES (?,?,?,?,?,?,?,?,?)");
-	$mysql = $connection->prepare("INSERT INTO owners(first_name,last_name,password,email) VALUES (?,?,?,?)");
-    $mysql->bind_param("ssssiss",$firstname, $lastname,$username,$password,$email);
+	$mysql = $connection->prepare("INSERT INTO owners(first_name,last_name,username,password,phone_nb,email,address) VALUES (?,?,?,?,?,?,?)");
+    $mysql->bind_param("ssssiss",$firstname, $lastname,$username,$password,$phone_nb,$email,$address);
     $mysql->execute();
 
 

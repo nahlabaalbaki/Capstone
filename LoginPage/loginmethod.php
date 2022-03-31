@@ -3,7 +3,7 @@
 include("../connection.php");
 
 
-if(isset($_POST["login"])){
+if(isset($_POST["loginmethod"])){
 
 
 	if(isset($_POST["username"]) && $_POST["username"] != " "){
