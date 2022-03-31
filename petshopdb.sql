@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3308
--- Generation Time: Mar 24, 2022 at 03:13 PM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Host: 127.0.0.1
+-- Generation Time: Mar 29, 2022 at 08:26 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -61,7 +61,7 @@ CREATE TABLE `boarding` (
   `start_date` datetime NOT NULL,
   `end_date` datetime NOT NULL,
   `owner_id` int(11) NOT NULL,
-  `room_number` int(11) NOT NULL
+  `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -73,7 +73,8 @@ CREATE TABLE `boarding` (
 CREATE TABLE `feedback` (
   `feedback_id` int(11) NOT NULL,
   `owner_id` int(11) NOT NULL,
-  `feedback` text NOT NULL
+  `feedback` text NOT NULL,
+  `rate` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
