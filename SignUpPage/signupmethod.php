@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
 
 
 	$mysql = $connection->prepare("INSERT INTO owners(first_name,last_name,username,password,phone_nb,email,address) VALUES (?,?,?,?,?,?,?)");
-    $mysql->bind_param("sssssis",$firstname, $lastname,$username,$password,$email,$phone_nb,$address);
+    $mysql->bind_param("ssssiss",$firstname, $lastname,$username,$password,$phone_nb,$email,$address);
     $mysql->execute();
 
 

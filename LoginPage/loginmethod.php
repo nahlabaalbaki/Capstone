@@ -3,11 +3,11 @@
 include("../connection.php");
 
 
-if(isset($_POST["loginmethod"])){
+if(isset($_POST['submit'])){
 
 
-	if(isset($_POST["username"]) && $_POST["username"] != " "){
-			$username = $_POST["username"];
+	if(isset($_POST["email"]) && $_POST["email"] != " "){
+			$email = $_POST["email"];
 		}
 		
 		else{
@@ -16,28 +16,28 @@ if(isset($_POST["loginmethod"])){
 
 		
 	
-    $query = "SELECT username and password FROM owners";
+    $query = "SELECT email and password FROM owners";
     $stmt = $connection->prepare($query);
 	$stmt->execute();
 	$results = $stmt->get_result();
 
 	while($row = $results->fetch_assoc()){
 
-		$username_table = $row["username"];
+		$email_table = $row["email"];
 		$password_table = $row["password"];
 
 
-		$username_input = $_POST["username"];
-		$password_input = hash("sha256", $_POST["pass"]);
+		$email_input = $_POST["email"];
+		$password_input = hash("sha256", $_POST["password"]);
 
-		if($username_input==$username_table){
+		if($email_input==$email_table){
 
 			if($password_input==$password_table){
 			
 					header("Location:../LandingPage/index.php");
 			}
 			else if($password_input!=$password_table && $password_input!=null){
-				echo "Incorrect username or password. Please try again.";
+				echo "Incorrect email or password. Please try again.";
 			}
 		}
 	}		
