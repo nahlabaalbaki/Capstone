@@ -1,27 +1,9 @@
 <?php
 
 include("../connection.php");
-/*
-if(isset($_POST['submit'])){
-
-$firstname =  $_POST["first_name"];
-$lastname =  $_POST["last_name"];
-$username =  $_POST["username"];
-$password = hash("sha256", $_POST["password"]);
-$phone_nb =$_POST["phone_nb"];
-$email = $_POST["email"];
-$address= $_POST["address"];
-	
-$sql= "INSERT INTO owners(first_name,last_name,username,password,phone_nb,email,address) VALUES ($firstname, $lastname,$username,$password,$email,$phone_nb,$address)";
-if($connection->query($sql)===TRUE){
-	echo "success";
-}
-$connection->close();
-header("Location:../LoginPage/login.php");
-}
-*/
 
 if(isset($_POST['submit'])){
+
 	if(isset($_POST["first_name"]) && $_POST["first_name"] != ""){
 		$firstname =  $_POST["first_name"];
 	
@@ -82,6 +64,5 @@ if(isset($_POST['submit'])){
 $mysql->close();
 $connection->close();
 header("Location:../LoginPage/login.php");
-
 }
 ?>

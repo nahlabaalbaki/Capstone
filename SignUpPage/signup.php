@@ -32,31 +32,31 @@ include("../connection.php");
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
+                                                        <input class="form-control" id="inputFirstName" type="text" name="first_name" placeholder="Enter your first name" Required />
                                                         <label for="inputFirstName">First name</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating">
-                                                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
+                                                        <input class="form-control" id="inputLastName" type="text" name="last_name" placeholder="Enter your last name" Required />
                                                         <label for="inputLastName">Last name</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" Required/>
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputUsername" type="text" placeholder="Create a username" />
+                                                        <input class="form-control" id="inputUsername" type="text" name="username" placeholder="Create a username" Required/>
                                                         <label for="inputUsername">Username</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
+                                                        <input class="form-control" id="inputPassword" type="password" name= "password" placeholder="Create a password" Required/>
                                                         <label for="inputPassword">Password</label>
                                                     </div>
                                                 </div>
@@ -65,13 +65,13 @@ include("../connection.php");
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPhone" type="text" placeholder="Your phone number" />
+                                                        <input class="form-control" id="inputPhone" type="text" name="phone_nb" placeholder="Your phone number" Required/>
                                                         <label for="inputPhone">Phone Number</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputAddress" type="text" placeholder="Your address" />
+                                                        <input class="form-control" id="inputAddress" type="text" name="address" placeholder="Your address" Required/>
                                                         <label for="inputAddress">Address</label>
                                                     </div>
                                                 </div>
