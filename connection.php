@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $server = "localhost:3308"; //could be 3306 depending on the port you use
 $username = "root";
 $password = "";

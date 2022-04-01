@@ -31,25 +31,27 @@ include("../connection.php");
                                     <div class="card-body">
                                         <form action="loginmethod.php" method="POST">
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
+                                                <input class="form-control" id="inputUsername" type="text" name="username" placeholder="Username" Required method="POST"/>
+                                                <label for="inputUsername">Username</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" />
+                                                <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" Required method="POST" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
-                                            <div class="form-check mb-3">
+                                            
+                                            <!-- <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-                                            </div> 
+                                            </div>  -->
+                                            
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="password.html">Forgot Password?</a>
-                                                <a class="btn btn-primary" href="index.html" type="submit" name="submit" >Login</a>
+                                                <button class="btn btn-primary" type="submit" name="login" >Login</button>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                        <div class="small"><a href="signup.php">Need an account? Sign up!</a></div>
                                     </div>
                                 </div>
                             </div>
