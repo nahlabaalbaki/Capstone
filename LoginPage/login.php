@@ -35,7 +35,7 @@ include("../connection.php");
                                                 <label for="inputUsername">Username</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" name="password" placeholder="Password" Required method="POST" />
+                                                <input class="form-control" id="inputPassword" type="password" name="pass" placeholder="Password" Required method="POST" />
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             
