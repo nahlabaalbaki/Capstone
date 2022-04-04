@@ -35,6 +35,9 @@ if(isset($_POST["login"])){
 			if($password_input==$password_table){
 			
 				header("Location:../LandingPage/index.php");
+                $_SESSION['valid'] = true;
+                $_SESSION['timeout'] = time();
+                $_SESSION['username'] = 'username';
 			}
 			else if($password_input!=$password_table && $password_input!=null){
 				echo "Incorrect username or password. Please try again.";
