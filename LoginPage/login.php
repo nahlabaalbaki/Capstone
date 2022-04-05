@@ -13,11 +13,17 @@ include("../connection.php");
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Login</title>
-        <link href="css/styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body class="bg-primary" >
         <div id="layoutAuthentication">
@@ -60,41 +66,21 @@ include("../connection.php");
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light">
-                    <div class="container2 container-fluid px-4">
+                <footer class="py-4 bg-light footer">
+                    <div class="container container-fluid px-4">
                        
-                        <div class="social">
-                            <a class="insta" href="https://www.instagram.com/_reiinaaa_/" target="_blank">
-                                <i class="fab fa-instagram"></i></a>
-                            <a class="twitter" href="https://twitter.com/_reinaaaa_" target="_blank">
-                                    <i class="fab fa-twitter"></i></a>
-                            <a class="facebook" href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            
-                
-                        </div>
-                    
-                
-                    
-                    <div class="info">
-                        <p class="us">About us</p>
-                        <div class="info1 infoAll">
-                            <i class="fas fa-phone telephone"></i>
-                            <p class="num">+961 03 666 666</p>
-                        </div>
-                        <div class="info2 infoAll">
-                            <i class="far fa-clock time"></i>
-                            <p class="sched">Mon-Sat: 8AM TILL 9PM</p>
-                        </div>
-                        <div class="info3 infoAll">
-                            <i class="fa fa-map-marker-alt loc"></i>
-                            <p class="spot">Beirut-Hamra Street</p>
-                        </div>
-                    </div>
-                    <div class="em">
-                        <a class="email" href="mailto: reina.bitar@lau.edu" target="_blank"><i
-                            class="far fa-envelope"></i></a>
-                            <p class="mymail">reina.bitar@lau.edu</p>
-                    </div>
+                    <h3>Purr-fect pets</h3>
+      <p>People trust us, pets love us.</p>
+      <div class="social-links">
+        <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
+      </div>
                     </div>
                 
                 </footer>

@@ -15,11 +15,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #5cb874;
+  color: #A07178;
 }
 
 a:hover {
-  color: #80c792;
+  color: #E6CCBE ;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5cb874;
+  background: #E6CCBE;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -45,12 +45,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #2A2B2A;
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #78c48c;
-  color: #fff;
+  background: #e3c1ae;
+  color: #2A2B2A;
 }
 .back-to-top.active {
   visibility: visible;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #fbfbfb;
+  background: #E6CCBE;
   font-size: 15px;
   height: 40px;
   padding: 0;
@@ -1147,7 +1147,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #fbfbfb;
+  background: #E6CCBE;
   min-height: 40px;
 }
 @media (max-width: 992px) {
@@ -1192,8 +1192,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #090909;
-  color: #fff;
+  background: #A07178;
+  color: #2A2B2A;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1201,7 +1201,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
+  color: #2A2B2A;
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -1219,8 +1219,8 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #5cb874;
-  color: #fff;
+  background: #E6CCBE;
+  color: #2A2B2A;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1231,8 +1231,8 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #449d5b;
-  color: #fff;
+  background: #e3c1ae;
+  color: #2A2B2A;
   text-decoration: none;
 }
 #footer .copyright {
