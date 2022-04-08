@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 29, 2022 at 08:26 PM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.0.6
+-- Host: localhost:3308
+-- Generation Time: Apr 06, 2022 at 08:40 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -67,6 +67,39 @@ CREATE TABLE `boarding` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `calendar`
+--
+
+CREATE TABLE `calendar` (
+  `00:00` int(11) NOT NULL,
+  `01:00` int(11) NOT NULL,
+  `02:00` int(11) NOT NULL,
+  `03:00` int(11) NOT NULL,
+  `04:00` int(11) NOT NULL,
+  `05:00` int(11) NOT NULL,
+  `06:00` int(11) NOT NULL,
+  `07:00` int(11) NOT NULL,
+  `08:00` int(11) NOT NULL,
+  `09:00` int(11) NOT NULL,
+  `10:00` int(11) NOT NULL,
+  `12:00` int(11) NOT NULL,
+  `13:00` int(11) NOT NULL,
+  `14:00` int(11) NOT NULL,
+  `15:00` int(11) NOT NULL,
+  `16:00` int(11) NOT NULL,
+  `17:00` int(11) NOT NULL,
+  `18:00` int(11) NOT NULL,
+  `19:00` int(11) NOT NULL,
+  `20:00` int(11) NOT NULL,
+  `21:00` int(11) NOT NULL,
+  `22:00` int(11) NOT NULL,
+  `23:00` int(11) NOT NULL,
+  `24:00` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `feedback`
 --
 
@@ -93,6 +126,16 @@ CREATE TABLE `owners` (
   `email` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `owners`
+--
+
+INSERT INTO `owners` (`owner_id`, `first_name`, `last_name`, `username`, `password`, `phone_nb`, `email`, `address`) VALUES
+(10, 'Ruba', 'Baalbaki', 'test1', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'jsjs@lak.co', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
+(11, 'Ruba', 'Baalbaki', 'ree', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'juju@hotmail.com', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
+(12, 'Ruba', 'Baalbaki', 'rania', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'nahla_princessoo@hotmail.com', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
+(13, 'Ruba', 'Baalbaki', 'mario', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'jsjs@lak.co', 'saida-abra- road turn next to the new electricity building 4th building on the left');
 
 -- --------------------------------------------------------
 
@@ -185,7 +228,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `owners`
 --
 ALTER TABLE `owners`
-  MODIFY `owner_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `owner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `petsitters`
