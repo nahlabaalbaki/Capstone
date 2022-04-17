@@ -40,29 +40,31 @@ include("../connection.php");
                                 </div>
                                 <div class="card-body">
                                     <form action="adoptionFormmethod.php" method="POST">
+                                            <label for="inputExperience">Tell us about ur experience with previous pet?</label>        
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputExperience" type="text"
                                                     name="experience" placeholder="Elaborate about your experience"
-                                                    Required />
-                                                <label for="inputExperience">Tell us about ur experience with previous pet?</label>
+                                                    Required />            
                                             </div>
+                                            <label for="inputFinancial">Are you able to prvoide everything your pet needs?</label>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputFinancial" type="text"
                                                     name="financial" placeholder="Elaborate about your financial situation"
                                                     Required />
-                                                <label for="inputFinancial">Are you able to prvoide everything your pet needs?</label>
                                             </div>
+                                            <label for="inputHousehold">Is your house/outdoor area pet friendly?</label>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputHousehold" type="text"
                                                     name="household" placeholder="Elaborate about your household"
                                                     Required />
-                                                <label for="inputHousehold">Is your house/outdoor area pet friendly?</label>
+                                                
                                             </div>
+                                            <label for="inputWork">How many hours a day would your pet have to stay at home alone?(working/busy)</label>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputWork" type="text"
                                                     name="work" placeholder="Elaborate about your work"
                                                     Required />
-                                                <label for="inputWork">How many hours a day would your pet have to stay at home alone?(working/busy)</label>
+                                                
                                             </div>
                                             
                                             
