@@ -42,7 +42,7 @@ include("../connection.php");
                                     <form action="appointmentFormmethod.php" method="POST" enctype="multipart/form-data">
                                             <label for="inputGrooming">How would you like to pamper your pet?</label>        
                                         
-                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type">
                                                     <option selected>Choose here</option>
                                                     <option value="nails">Trim their nails</option>
                                                     <option value="hair">Get a hair cut</option>
@@ -51,24 +51,24 @@ include("../connection.php");
                                             
                                             <label for="inputDate">Which day are you free?(keep in mind that you are booking per week)</label>
                                            
-                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="date">
                                                     <option selected>Choose here</option>
-                                                    <option value="mon">Monday</option>
-                                                    <option value="tues">Tuesday</option>
-                                                    <option value="wed">Wednesday</option>
-                                                    <option value="thurs">Thursday</option>
-                                                    <option value="fri">Friday</option>
-                                                    <option value="sat">Saturday</option>
+                                                    <option value="Monday">Monday</option>
+                                                    <option value="Tuesday">Tuesday</option>
+                                                    <option value="wWednesdayed">Wednesday</option>
+                                                    <option value="Thursday">Thursday</option>
+                                                    <option value="Friday">Friday</option>
+                                                    <option value="Saturday">Saturday</option>
                                                 </select>
                                             
                                             <label for="inputTime">What time is preferable for you?(first come first serve)</label>
                                             
-                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="time">
                                                     <option selected>Choose here</option>
-                                                    <option value="10-12">10:00 AM - 12:00 PM</option>
-                                                    <option value="12-2">12:00 PM - 2:00 PM</option>
-                                                    <option value="2-4">2:00 PM - 4:00 PM</option>
-                                                    <option value="4-6">4:00 PM - 6:00 PM</option>
+                                                    <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
+                                                    <option value="12:00 PM - 2:00 PM">12:00 PM - 2:00 PM</option>
+                                                    <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
+                                                    <option value="4:00 PM - 6:00 PM">4:00 PM - 6:00 PM</option>
                                                 </select>
                                                 
                                             
@@ -81,7 +81,7 @@ include("../connection.php");
                                                                                
                                         <div class="mt-4 mb-0">
                                             <div class="d-grid"><button class="btn bot btn-block" name='submit'
-                                                    type='submit' value="Upload" >Submit Form</button></div>
+                                                    type='submit' >Submit Form</button></div>
                                         </div>
                                     </form>
                                 </div>
