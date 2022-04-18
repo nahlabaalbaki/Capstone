@@ -1,0 +1,64 @@
+https://meet.google.com/bgx-soud-rhe
+
+
+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
+
+
+import re
+import nltk
+# from nltk.book import *
+from nltk.stem.porter import *
+from nltk.stem import * 
+from nltk import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+from collections import Counter
+from nltk.tokenize import RegexpTokenizer #regular expression tokenizer
+import re  # regular expression module
+from nltk.corpus import gutenberg as g
+from nltk.corpus import brown as b
+from nltk.corpus import nps_chat
+from nltk.corpus import wordnet 
+import pandas as pd
+import csv
+
+import nltk 
+from nltk.book import *
+
+
+
+
+import nltk
+# from nltk.book import *
+from nltk.stem.porter import *
+from nltk.stem import * 
+from nltk import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+from collections import Counter
+from nltk.tokenize import RegexpTokenizer #regular expression tokenizer
+from nltk import FreqDist
+from nltk.corpus import gutenberg as g
+from nltk.corpus import brown
+from nltk.corpus import nps_chat
+import re  # regular epression 
+import numpy as np
+import matplotlib.pyplot as plt
+import random
+import string # to process standard python strings
+import warnings
+warnings.filterwarnings('ignore')
+import pandas as pd
+import scipy.sparse
+from sklearn.feature_extraction.text import CountVectorizer #for Bag of Words
+from sklearn.feature_extraction.text import TfidfVectorizer # for Term Frequency Inverse Document Frequency
+from sklearn.metrics.pairwise import cosine_similarity
+from bs4 import BeautifulSoup
+import requests
+
+import matplotlib.pyplot as plt 
+
+import io 
+from io import open 
+import string
+
+
+ 

@@ -31,17 +31,29 @@ if(isset($_POST['submit'])){
 	}else{
 		die("No access");
 	}
+	if(isset($_FILES["file"]["name"]) && $_FILES["file"]["name"] != ""){
+		$document =  $_FILES["file"]["name"];
+		$tname = $_FILES["file"]["tmp_name"];
+	}else{
+		die("No access");
+
+	}
+	$uploads_dir = '../Documents';
+    move_uploaded_file($tname, $uploads_dir.'/'.$document);
+	header("Location:../LandingPage/index.php");
+
+	$mysql = "INSERT into adoption(experience,financial,household,work,document) VALUES ('$experience','$financial','$household','$work','$document')";
+    
+	if(mysqli_query($connection,$mysql)){
+ 
+    echo "Document Sucessfully uploaded";
+    }
+    else{
+        echo "Error";
+    }
 
 
-	$mysql = $connection->prepare("INSERT INTO adoption(experience,financial,household,work) VALUES (?,?,?,?)");
-    $mysql->bind_param("ssss",$experience,$financial,$household,$work);
-    $mysql->execute();
 
 
-
-
-$mysql->close();
-$connection->close();
-header("Location:../LandingPage/index.php");
 }
 ?>

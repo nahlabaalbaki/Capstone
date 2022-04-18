@@ -39,7 +39,7 @@ include("../connection.php");
                                     <h3 class="text-center font-weight-light my-4">Fill Adoption Form</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="adoptionFormmethod.php" method="POST">
+                                    <form action="adoptionFormmethod.php" method="POST" enctype="multipart/form-data">
                                             <label for="inputExperience">Tell us about ur experience with previous pet?</label>        
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputExperience" type="text"
@@ -66,7 +66,13 @@ include("../connection.php");
                                                     Required />
                                                 
                                             </div>
-                                            
+                                            </div>
+                                            <label for="inputDocument">Please upload all the required docuemnts. (National ID, Birth Certificate ...)</label><br>
+                                            <div class="form-floating mb-3">
+                                                <input  id="inputDocument" type="file" name="file" 
+                                                    Required />
+                                                
+                                            </div>
                                             
                                         
 
@@ -74,7 +80,7 @@ include("../connection.php");
                                         
                                         <div class="mt-4 mb-0">
                                             <div class="d-grid"><button class="btn bot btn-block" name='submit'
-                                                    type='submit'>Submit Form</button></div>
+                                                    type='submit' value="Upload" >Submit Form</button></div>
                                         </div>
                                     </form>
                                 </div>

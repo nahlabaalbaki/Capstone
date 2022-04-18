@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3308
--- Generation Time: Apr 06, 2022 at 08:40 PM
+-- Generation Time: Apr 18, 2022 at 11:15 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -33,8 +33,16 @@ CREATE TABLE `adoption` (
   `experience` text NOT NULL,
   `financial` text NOT NULL,
   `household` text NOT NULL,
-  `work` text NOT NULL
+  `work` text NOT NULL,
+  `document` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `adoption`
+--
+
+INSERT INTO `adoption` (`adoption_id`, `owner_id`, `experience`, `financial`, `household`, `work`, `document`) VALUES
+(2, 0, 'q', 'fkjljkejk', 'tt', 'jkfweljlekwjeklw', 'link.txt');
 
 -- --------------------------------------------------------
 
@@ -135,7 +143,8 @@ INSERT INTO `owners` (`owner_id`, `first_name`, `last_name`, `username`, `passwo
 (10, 'Ruba', 'Baalbaki', 'test1', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'jsjs@lak.co', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
 (11, 'Ruba', 'Baalbaki', 'ree', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'juju@hotmail.com', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
 (12, 'Ruba', 'Baalbaki', 'rania', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'nahla_princessoo@hotmail.com', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
-(13, 'Ruba', 'Baalbaki', 'mario', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'jsjs@lak.co', 'saida-abra- road turn next to the new electricity building 4th building on the left');
+(13, 'Ruba', 'Baalbaki', 'mario', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'jsjs@lak.co', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
+(14, 'Sabine', 'Hamdoun', 'sab', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'sabine.hamdoun@lau.edu', 'saida-abra- road turn next to the new electricity building 4th building on the left');
 
 -- --------------------------------------------------------
 
@@ -204,7 +213,7 @@ ALTER TABLE `petsitters`
 -- AUTO_INCREMENT for table `adoption`
 --
 ALTER TABLE `adoption`
-  MODIFY `adoption_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `adoption_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `appointment`
@@ -228,7 +237,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `owners`
 --
 ALTER TABLE `owners`
-  MODIFY `owner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `owner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `petsitters`
