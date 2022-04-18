@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3308
--- Generation Time: Apr 18, 2022 at 11:15 AM
+-- Generation Time: Apr 18, 2022 at 09:09 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -52,11 +52,20 @@ INSERT INTO `adoption` (`adoption_id`, `owner_id`, `experience`, `financial`, `h
 
 CREATE TABLE `appointment` (
   `appointment_id` int(11) NOT NULL,
-  `date` date NOT NULL,
-  `time` time NOT NULL,
+  `date` text NOT NULL,
+  `time` text NOT NULL,
   `type` varchar(255) NOT NULL,
+  `comments` text NOT NULL,
   `owner_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `appointment`
+--
+
+INSERT INTO `appointment` (`appointment_id`, `date`, `time`, `type`, `comments`, `owner_id`) VALUES
+(2, 'mon', '12-2', 'nails', 'cadsff', 0),
+(3, 'Monday', '10:00 AM - 12:00 PM', 'nails', 'gegag', 0);
 
 -- --------------------------------------------------------
 
@@ -144,7 +153,8 @@ INSERT INTO `owners` (`owner_id`, `first_name`, `last_name`, `username`, `passwo
 (11, 'Ruba', 'Baalbaki', 'ree', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'juju@hotmail.com', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
 (12, 'Ruba', 'Baalbaki', 'rania', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'nahla_princessoo@hotmail.com', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
 (13, 'Ruba', 'Baalbaki', 'mario', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'jsjs@lak.co', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
-(14, 'Sabine', 'Hamdoun', 'sab', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'sabine.hamdoun@lau.edu', 'saida-abra- road turn next to the new electricity building 4th building on the left');
+(14, 'Sabine', 'Hamdoun', 'sab', '9af15b336e6a9619928537df30b2e6a2376569fcf9d7e773eccede65606529a0', 70691227, 'sabine.hamdoun@lau.edu', 'saida-abra- road turn next to the new electricity building 4th building on the left'),
+(15, 'Ruba', 'Baalbaki', 'fds', 'e5db289311040d7810864379d1ba7f6762b922731f10eb8159cfcc5b77fb70cc', 70691227, 'nahla.baalbaki@lau.edu', 'saida-abra- road turn next to the new electricity building 4th building on the left');
 
 -- --------------------------------------------------------
 
@@ -219,7 +229,7 @@ ALTER TABLE `adoption`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `appointment_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `appointment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `boarding`
@@ -237,7 +247,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `owners`
 --
 ALTER TABLE `owners`
-  MODIFY `owner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `owner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `petsitters`
