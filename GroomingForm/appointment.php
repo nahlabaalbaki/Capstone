@@ -36,21 +36,21 @@ include("../connection.php");
                         <div class="col-lg-7">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
-                                    <h3 class="text-center font-weight-light my-4">Fill Adoption Form</h3>
+                                    <h3 class="text-center font-weight-light my-4">Book an appointment</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="adoptionFormmethod.php" method="POST" enctype="multipart/form-data">
+                                    <form action="appointmentFormmethod.php" method="POST" enctype="multipart/form-data">
                                             <label for="inputGrooming">How would you like to pamper your pet?</label>        
-                                            <div class="form-floating mb-3">
+                                        
                                                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
                                                     <option selected>Choose here</option>
                                                     <option value="nails">Trim their nails</option>
                                                     <option value="hair">Get a hair cut</option>
                                                     <option value="bath">Take a bath</option>
                                                 </select>            
-                                            </div>
-                                            <label for="inputDate">Which day are you free?(keep in mind it is per week)</label>
-                                            <div class="form-floating mb-3">
+                                            
+                                            <label for="inputDate">Which day are you free?(keep in mind that you are booking per week)</label>
+                                           
                                                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
                                                     <option selected>Choose here</option>
                                                     <option value="mon">Monday</option>
@@ -60,9 +60,9 @@ include("../connection.php");
                                                     <option value="fri">Friday</option>
                                                     <option value="sat">Saturday</option>
                                                 </select>
-                                            </div>
-                                            <label for="inputTime">What time is preferable for you?</label>
-                                            <div class="form-floating mb-3">
+                                            
+                                            <label for="inputTime">What time is preferable for you?(first come first serve)</label>
+                                            
                                                 <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
                                                     <option selected>Choose here</option>
                                                     <option value="10-12">10:00 AM - 12:00 PM</option>
@@ -71,7 +71,7 @@ include("../connection.php");
                                                     <option value="4-6">4:00 PM - 6:00 PM</option>
                                                 </select>
                                                 
-                                            </div>
+                                            
                                             <label for="inputComments">Is there anything you would like to let us know about?</label>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputComments" type="text"
@@ -86,7 +86,7 @@ include("../connection.php");
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><p>Thank you for giving us your time!</p></div>
+                                    <div class="small"><p>Thank you for your time!</p></div>
                                 </div>
                             </div>
                         </div>

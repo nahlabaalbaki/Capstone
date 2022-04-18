@@ -85,7 +85,7 @@ include("../connection.php");
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><p>Thank you for giving us your time!</p></div>
+                                    <div class="small"><p>Thank you for your time!</p></div>
                                 </div>
                             </div>
                         </div>
