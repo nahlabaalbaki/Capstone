@@ -72,7 +72,7 @@ include("../connection.php");
                                                 </select>
                                                 
                                             
-                                            <label for="inputComments">Is there anything you would like to let us know about?</label>
+                                            <label for="inputComments">Is there anything you would like to let us know about your pet?</label>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputComments" type="text"
                                                     name="comments" placeholder="Elaborate about your pet"/>   
