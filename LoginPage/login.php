@@ -64,7 +64,7 @@ include("../connection.php");
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><a href="signup.php">Need an account? Sign up!</a></div>
+                                    <div class="small"><a href="../SignUpPage/signup.php">Need an account? Sign up!</a></div>
                                 </div>
                             </div>
                         </div>
