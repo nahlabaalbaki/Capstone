@@ -19,12 +19,13 @@ include("../connection.php");
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body class="bg-primary">
@@ -120,5 +121,5 @@ include("../connection.php");
     </script>
     <script src="js/scripts.js"></script>
 </body>
-
+<link href="css/styles.css" rel="stylesheet" />
 </html>

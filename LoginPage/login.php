@@ -98,5 +98,5 @@ include("../connection.php");
     </script>
     <script src="js/scripts.js"></script>
 </body>
-
+<link href="css/styles.css" rel="stylesheet" />
 </html>
