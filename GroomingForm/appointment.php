@@ -25,7 +25,7 @@ include("../connection.php");
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 
 <body class="bg-primary">
