@@ -140,7 +140,7 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Pet Sitter information</h3>
               <ul>
                 <li><strong>Name</strong>: Reina Bitar</li>
                 <li><strong>Age</strong></strong>: 20</li>
