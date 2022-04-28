@@ -1,3 +1,21 @@
+<?php
+include("../connection.php");
+
+$id=$_GET['petsitters_id'];
+
+$count="SELECT *  FROM student where id= $id ";
+
+  $stmt = $connection->prepare($count);
+  $stmt->bind_param('i',$id);
+  $stmt->execute();
+  
+   $result = $stmt->get_result();
+   $row=$result->fetch_object();
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -139,20 +157,20 @@
           </div>
 
           <div class="col-lg-4">
+         
             <div class="portfolio-info">
               <h3>Pet Sitter information</h3>
               <ul>
-                <li><strong>Name</strong>: Reina Bitar</li>
-                <li><strong>Age</strong></strong>: 20</li>
-                <li><strong>Availability</strong>: Available</li>
-                <li><strong>Phone Number</strong>: 701712994</li>
+                <li><strong>Name</strong>:<?php echo $row->name; ?> </li>
+                <li><strong>Age</strong></strong>:<?php echo  $row->age; ?> </li>
+                <li><strong>Availability</strong>: <?php echo  $row->availability; ?> </li>
+                <li><strong>Phone Number</strong>: <?php echo $row->phone_number; ?> </li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Experience with pets</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <?php echo $row->experience ?> 
             </div>
           </div>
 
