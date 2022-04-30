@@ -12,7 +12,8 @@ include("../connection.php");
   <title>Purr-fect Pets</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  
+  
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -30,13 +31,11 @@ include("../connection.php");
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Rating -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 
-  <!-- =======================================================
-  * Template Name: Green - v4.7.0
-  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -674,7 +673,7 @@ include("../connection.php");
                 <label for="name">Service</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
-              <div class="form-group mt-3">
+              <!-- <div class="form-group mt-3">
                 <label for="name">Rate</label>
                     <select class="form-control" name="rate" id="rate">
                         <option value="1">1</option>
@@ -684,6 +683,15 @@ include("../connection.php");
                         <option value="5">5</option>
                     </select>
                 
+              </div> -->
+              <div class="form-group mt-3">
+                  <div class="rateyo" id="rating"
+                    data-rateyo-rating="4"
+                    data-rateyo-num-stars="5"
+                    data-rateyo-score="3">
+                  </div>
+                  <span class="result">0</span>
+                  <input type="hidden" name="rating">
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
@@ -736,6 +744,18 @@ include("../connection.php");
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Rate -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script>
+    $(function(){
+      $(".rateyo").rateYo().on("rateyo.change", function (e, data){
+        var rating= data.rating;
+        $(this).parent().find('.score').text('Score:'+ $(this).attr('data-rateyo-score'));
+        $(this).pranet().find('.result').text('Rating:'+rating);
+        $(this).parent().find('inpur[name=rating]').val(rating);
+      });
+    });
+  </script>
 </body>
 
 </html>
