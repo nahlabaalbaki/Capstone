@@ -35,7 +35,7 @@ include("../connection.php");
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Rating -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -684,7 +684,7 @@ include("../connection.php");
                     </select>
                 
               </div> -->
-              <div class="form-group mt-3">
+              <!-- <div class="form-group mt-3">
                   <div class="rateyo" id="rating"
                     data-rateyo-rating="4"
                     data-rateyo-num-stars="5"
@@ -692,6 +692,17 @@ include("../connection.php");
                   </div>
                   <span class="result">0</span>
                   <input type="hidden" name="rating">
+              </div> -->
+              <div class="form-group mt-3">
+                <p>Rate</p>
+                <div class="rating">
+                <input type="radio" name="star" if="star1"><label for="star1"></label>
+                <input type="radio" name="star" if="star2"><label for="star2"></label>
+                <input type="radio" name="star" if="star3"><label for="star3"></label>
+                <input type="radio" name="star" if="star4"><label for="star4"></label>
+                <input type="radio" name="star" if="star5"><label for="star5 "></label>
+                </div>
+
               </div>
               <div class="form-group mt-3">
                 <label for="name">Message</label>
