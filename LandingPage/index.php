@@ -9,6 +9,11 @@ $stmt = $connection->prepare($query);
 $stmt->execute();
 $results = $stmt->get_result();
 
+$query1 = "SELECT * FROM petimages";
+$stmt1 = $connection->prepare($query1);
+$stmt1->execute();
+$results1 = $stmt1->get_result();
+
 
 ?>
 
@@ -421,7 +426,7 @@ $results = $stmt->get_result();
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -430,25 +435,25 @@ $results = $stmt->get_result();
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container">
-
+        <?php while($row1 = $results1->fetch_assoc()){ ?>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="../PetImages/<?php echo $row1["image"];  ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4><?php  echo $row1["pet_type"];  ?></h4>
+                <p><?php  echo $row1["pet_age"];  ?></p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="../PetImages/<?php echo $row1["image"];  ?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -558,8 +563,8 @@ $results = $stmt->get_result();
                 </div>
               </div>
             </div>
-          </div>
-
+          </div> -->
+          <?php } ?>
         </div>
 
       </div>
