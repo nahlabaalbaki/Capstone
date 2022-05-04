@@ -2,7 +2,7 @@
 
 include("../connection.php");
 
-$owner_id= $_SESSION['owner_id'];
+// $owner_id= $_SESSION['owner_id'];
 
 if(isset($_POST['submit'])){
 
@@ -27,6 +27,12 @@ if(isset($_POST['submit'])){
 		die("No access");
 	}
 
+	if(isset($_POST["rate"]) && $_POST["rate"] != ""){
+		$rate =  $_POST["rate"];
+	}else{
+		die("No access");
+	}
+
 	if(isset($_POST["message"]) && $_POST["message"] != ""){
 		$message = $_POST["message"];
 	
@@ -35,8 +41,8 @@ if(isset($_POST['submit'])){
 	}
 
 
-    $query = $connection->prepare("INSERT INTO feedback(name,email,service,message,owner_id) VALUES (?,?,?,?,?)");
-    $query->bind_param("ssssi",$name,$email,$service,$message,$owner_id);
+    $query = $connection->prepare("INSERT INTO feedback(name,email,service,message,rate) VALUES (?,?,?,?,?)");
+    $query->bind_param("ssssi",$name,$email,$service,$message,$rate);
     $query->execute();
     
 	$query->close();

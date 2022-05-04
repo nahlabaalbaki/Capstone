@@ -49,7 +49,7 @@ $results1 = $stmt1->get_result();
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Rating -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous">
 </head>
 
@@ -169,7 +169,7 @@ $results1 = $stmt1->get_result();
   <main id="main">
 
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services section-bg">
+    <!-- <section id="featured-services" class="featured-services section-bg">
       <div class="container">
 
         <div class="row no-gutters">
@@ -197,7 +197,7 @@ $results1 = $stmt1->get_result();
         </div>
 
       </div>
-    </section><!-- End Featured Services Section -->
+    </section>End Featured Services Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -205,107 +205,30 @@ $results1 = $stmt1->get_result();
 
         <div class="section-title">
           <h2>About Us</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Purr-fect pets wants nothing but love and the best for your pets. We prioritize your pet's happiness while working proffessionally.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/sideCat.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            <h3>Treating pets like Royalty</h3>
+            
+            <p class="fst-italic">There’s nothing like the unconditional love of a pet. They show you affection, give you a sense of purpose,
+            and greet you every day when you come home.</p>
+            <p>Our company has been working with pets since 2012 while providing our clients with the best services for
+            their precious pets. </p>
+            <h3>Why do we have adoption services?</h3>
+            <p>Practices and conditions in most pet stores are unethical and downright abhorrent in many cases.
+                Pets live in filthy conditions without adequate food, water, or veterinary care. Many pet stores also
+                don’t socialize their animals, which can lead to potential behavioral problems that aren’t ideal for a
+                family pet. Adopting a pet,however, has tons of advantages and most importantly you will be saving a life.</p>
           </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container">
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Our Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Our Clients</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Our Clients Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -313,7 +236,7 @@ $results1 = $stmt1->get_result();
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>People trust us, pets love us.</p>
         </div>
 
         <div class="row">
@@ -325,8 +248,9 @@ $results1 = $stmt1->get_result();
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="#team">Pet Sitter</a></h4>
+              <p>The most affordable pet sitters you can find!
+                A premium experience for your pet. Any pick up spot.</p>
             </div>
           </div>
 
@@ -338,51 +262,13 @@ $results1 = $stmt1->get_result();
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="#portfolio">Pet Grooming</a></h4>
+              <p>Bathe your pet in luxury since every pet desrves celebrity treatment. You can also request a custom-cut
+                from nose to butt.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -390,8 +276,8 @@ $results1 = $stmt1->get_result();
                 </svg>
                 <i class="bx bx-arch"></i>
               </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+              <h4><a href="">Pet Boarding</a></h4>
+              <p>You can rely on us to make sure your pets have an elite vacation while you're out on yours.</p>
             </div>
           </div>
 
@@ -400,30 +286,15 @@ $results1 = $stmt1->get_result();
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Adopt Pets</h2>
+          <p>Don't breed or buy, while shelter animals die.</p>
+
         </div>
 
         <!-- <div class="row">
@@ -565,8 +436,9 @@ $results1 = $stmt1->get_result();
             </div>
           </div> -->
           <?php } ?>
-        </div>
 
+        </div>
+        <div class="text-center"><button name ="submit"><a href="../AdoptionForm/adoptionForm.php">Adopt Now</a></button>
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -656,7 +528,7 @@ $results1 = $stmt1->get_result();
                 <label for="name">Service</label>
                 <input type="text" class="form-control" name="service" id="subject" required>
               </div>
-              <!-- <div class="form-group mt-3">
+              <div class="form-group mt-3">
                 <label for="name">Rate</label>
                     <select class="form-control" name="rate" id="rate">
                         <option value="1">1</option>
@@ -666,7 +538,7 @@ $results1 = $stmt1->get_result();
                         <option value="5">5</option>
                     </select>
                 
-              </div> -->
+              </div>
               <!-- <div class="form-group mt-3">
                   <div class="rateyo" id="rating"
                     data-rateyo-rating="4"
@@ -676,8 +548,8 @@ $results1 = $stmt1->get_result();
                   <span class="result">0</span>
                   <input type="hidden" name="rating">
               </div> -->
-<<<<<<< HEAD
-              <div class="form-group mt-3">
+
+              <!-- <div class="form-group mt-3">
                 <p>Rate</p>
                 <div class="rating">
                 <input type="radio" name="star" if="star1"><label for="star1"></label>
@@ -687,9 +559,7 @@ $results1 = $stmt1->get_result();
                 <input type="radio" name="star" if="star5"><label for="star5 "></label>
                 </div>
 
-              </div>
-=======
->>>>>>> 48c2944ff8bff601d36143b2b73173fa787e9c8e
+              </div> -->
               <div class="form-group mt-3">
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
@@ -742,7 +612,7 @@ $results1 = $stmt1->get_result();
   <script src="assets/js/main.js"></script>
 
   <!-- Rate -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script> -->
   <!-- <script>
     $(function(){
       $(".rateyo").rateYo().on("rateyo.change", function (e, data){
