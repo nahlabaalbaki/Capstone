@@ -1,5 +1,20 @@
 <?php
+
 include("../connection.php");
+
+
+
+$query = "SELECT * FROM petsitters";
+$stmt = $connection->prepare($query);
+$stmt->execute();
+$results = $stmt->get_result();
+
+$query1 = "SELECT * FROM petimages";
+$stmt1 = $connection->prepare($query1);
+$stmt1->execute();
+$results1 = $stmt1->get_result();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -411,7 +426,7 @@ include("../connection.php");
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -420,25 +435,25 @@ include("../connection.php");
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container">
-
+        <?php while($row1 = $results1->fetch_assoc()){ ?>
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="../PetImages/<?php echo $row1["image"];  ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4><?php  echo $row1["pet_type"];  ?></h4>
+                <p><?php  echo $row1["pet_age"];  ?></p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="../PetImages/<?php echo $row1["image"];  ?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -548,8 +563,8 @@ include("../connection.php");
                 </div>
               </div>
             </div>
-          </div>
-
+          </div> -->
+          <?php } ?>
         </div>
 
       </div>
@@ -561,61 +576,29 @@ include("../connection.php");
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p style="font-size:20px;">Our Team is very well experienced in dealing with pets! Scroll to know more about our team members.</p>
         </div>
 
         <div class="row">
+        <?php while($row = $results->fetch_assoc()){ ?>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+            <img src="../Images/<?php echo $row["image"];  ?>">
+              <h4><?php echo $row["name"];  ?></h4>
+              <span>Availability:<?php  echo $row["availability"];  ?></span>
+              <span>Phone Number:<?php  echo $row["phone_number"];  ?></span>
               <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+              <?php echo $row["experience"];  ?>
               </p>
-              <div class="social">
+              <!-- <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" alt="">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" alt="">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
+          <?php } ?>
         </div>
 
       </div>
@@ -658,7 +641,7 @@ include("../connection.php");
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="feedbackmethod.php" method="post" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -671,7 +654,7 @@ include("../connection.php");
               </div>
               <div class="form-group mt-3">
                 <label for="name">Service</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <input type="text" class="form-control" name="service" id="subject" required>
               </div>
               <!-- <div class="form-group mt-3">
                 <label for="name">Rate</label>
@@ -693,6 +676,7 @@ include("../connection.php");
                   <span class="result">0</span>
                   <input type="hidden" name="rating">
               </div> -->
+<<<<<<< HEAD
               <div class="form-group mt-3">
                 <p>Rate</p>
                 <div class="rating">
@@ -704,6 +688,8 @@ include("../connection.php");
                 </div>
 
               </div>
+=======
+>>>>>>> 48c2944ff8bff601d36143b2b73173fa787e9c8e
               <div class="form-group mt-3">
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
@@ -713,7 +699,7 @@ include("../connection.php");
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button name ="submit" type="submit">Send Message</button></div>
             </form>
           </div>
 
@@ -757,7 +743,7 @@ include("../connection.php");
 
   <!-- Rate -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
-  <script>
+  <!-- <script>
     $(function(){
       $(".rateyo").rateYo().on("rateyo.change", function (e, data){
         var rating= data.rating;
@@ -766,7 +752,7 @@ include("../connection.php");
         $(this).parent().find('inpur[name=rating]').val(rating);
       });
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

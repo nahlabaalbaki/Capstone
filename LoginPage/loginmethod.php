@@ -16,11 +16,11 @@ if(isset($_POST["login"])){
 
 		
 	
-    $query = "SELECT username, password FROM owners";
+    $query = "SELECT owner_id, username, password FROM owners";
     $stmt = $connection->prepare($query);
 	$stmt->execute();
 	$results = $stmt->get_result();
-
+	$owner_id =$_GET['owner_id'];
 	while($row = $results->fetch_assoc()){
 
 		$username_table = $row["username"];
@@ -37,6 +37,7 @@ if(isset($_POST["login"])){
                 $_SESSION['valid'] = true;
                 $_SESSION['timeout'] = time();
                 $_SESSION['username'] = $username_table;
+				$_SESSION['owner_id'] = $owner_id;
 			}
 			else if($password_input!=$password_table && $password_input!=null){
 				echo "Incorrect username or password. Please try again.";
