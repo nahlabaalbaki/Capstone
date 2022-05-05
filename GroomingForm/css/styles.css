@@ -333,7 +333,25 @@ label {
   display: flex;
   flex-direction: column;
 }
-
+ button{
+  background: #E6CCBE;
+  border: 0;
+  padding: 10px 24px;
+  color: #A07178;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-bottom: 5px;
+ }
+ button:hover {
+  background: #A07178;
+}
+a{
+  text-decoration: none;
+  color: #A07178;
+}
+a:hover{
+  color: #E6CCBE;
+}
 button {
   border-radius: 0;
 }

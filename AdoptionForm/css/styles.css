@@ -217,7 +217,9 @@ mark, .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
 }
-
+.doc{
+  margin-left: 20px;
+}
 sub,
 sup {
   position: relative;
@@ -4594,8 +4596,9 @@ textarea.form-control-lg {
 
 .card-footer {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #a0717890;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  color: #2A2B2A;
 }
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -11706,6 +11709,25 @@ body {
   border-radius: 0.25rem !important;
 }
 
+button{
+  border: 0;
+  padding: 10px 24px;
+  transition: 0.4s;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+ button:hover {
+  background: #a0717890;
+}
+a{
+  text-decoration: none;
+  color: #A07178;
+}
+a:hover{
+  color: #E6CCBE;
+}
 
 #footer {
   background: #A07178;

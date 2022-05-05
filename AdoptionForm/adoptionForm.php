@@ -67,8 +67,8 @@ include("../connection.php");
                                                 
                                             </div>
                                             </div>
-                                            <label for="inputDocument">Please upload all the required docuemnts. (National ID, Birth Certificate ...)</label><br>
-                                            <div class="form-floating mb-3">
+                                            <label class="doc" for="inputDocument">Please upload all the required docuemnts. (National ID, Birth Certificate ...)</label><br>
+                                            <div class="form-floating mb-3 doc">
                                                 <input  id="inputDocument" type="file" name="file" 
                                                     Required />
                                                 
@@ -80,7 +80,7 @@ include("../connection.php");
                                         
                                         <div class="mt-4 mb-0">
                                             <div class="d-grid"><button class="btn bot btn-block" name='submit'
-                                                    type='submit' value="Upload" >Submit Form</button></div>
+                                                    type='submit' value="Upload" ><a href="../LandingPage/index.php">Submit</a></button></div>
                                         </div>
                                     </form>
                                 </div>

@@ -1,7 +1,8 @@
 <?php
+include '../connection2.php';
+$query = "SELECT DISTINCT date FROM appointment WHERE date>CURRENT_DATE and date<=CURRENT_DATE+7";
 
-include("../connection.php");
-
+$result = $db->query($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,13 +20,14 @@ include("../connection.php");
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="css/styles.css"/>
+
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body class="bg-primary">
@@ -40,86 +42,131 @@ include("../connection.php");
                                     <h3 class="text-center font-weight-light my-4">Book an appointment</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="appointmentFormmethod.php" method="POST" enctype="multipart/form-data">
-                                            <label for="inputGrooming">How would you like to pamper your pet?</label>        
-                                        
-                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type">
-                                                    <option selected>Choose here</option>
-                                                    <option value="nails">Trim their nails</option>
-                                                    <option value="hair">Get a hair cut</option>
-                                                    <option value="bath">Take a bath</option>
-                                                </select>            
-                                            
-                                            <label for="inputDate">Which day are you free?(keep in mind that you are booking per week)</label>
-                                           
-                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="date">
-                                                    <option selected>Choose here</option>
-                                                    <option value="Monday">Monday</option>
-                                                    <option value="Tuesday">Tuesday</option>
-                                                    <option value="wWednesdayed">Wednesday</option>
-                                                    <option value="Thursday">Thursday</option>
-                                                    <option value="Friday">Friday</option>
-                                                    <option value="Saturday">Saturday</option>
-                                                </select>
-                                            
-                                            <label for="inputTime">What time is preferable for you?(first come first serve)</label>
-                                            
-                                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="time">
-                                                    <option selected>Choose here</option>
-                                                    <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
-                                                    <option value="12:00 PM - 2:00 PM">12:00 PM - 2:00 PM</option>
-                                                    <option value="2:00 PM - 4:00 PM">2:00 PM - 4:00 PM</option>
-                                                    <option value="4:00 PM - 6:00 PM">4:00 PM - 6:00 PM</option>
-                                                </select>
-                                                
-                                            
-                                            <label for="inputComments">Is there anything you would like to let us know about your pet?</label>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputComments" type="text"
-                                                    name="comments" placeholder="Elaborate about your pet"/>   
-                                            </div>
-                                            </div>
-                                                                               
-                                        <div class="mt-4 mb-0">
-                                            <div class="d-grid"><button class="btn bot btn-block" name='submit'
-                                                    type='submit' >Submit Form</button></div>
+                                    <form action="appointmentFormmethod.php" method="post">
+                                        <label for="inputGrooming">How would you like to pamper your pet?</label>
+
+                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
+                                            <option selected>Choose here</option>
+                                            <option value="nails">Trim their nails</option>
+                                            <option value="hair">Get a hair cut</option>
+                                            <option value="bath">Take a bath</option>
+                                        </select>
+
+
+
+
+                                        <label for="inputGrooming">Select Day:</label>
+                                        <select name="date" class="form-control" onchange="FetchState(this.value)" required>
+                                            <option value="">Select Date</option>
+                                            <?php
+                                            if ($result->num_rows > 0) {
+                                                while ($row = $result->fetch_assoc()) {
+                                                    echo '<option value=' . $row['date'] . '>' . $row['date'] . '</option>';
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+                                
+                                        <div class="form-group">
+                                            <label for="pwd">Time</label>
+                                            <select name="time" id="time" class="form-control">
+                                                <option>Select time</option>
+                                            </select>
                                         </div>
+
+                                        <label for="inputComments">Details</label>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="inputComments" type="text" name="inputComments" placeholder="Elaborate about your pet" />
+                                        </div>
+                                
+
+                                        <div class="mt-4 mb-0">
+                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="../LandingPage/index.php">Submit</a></button>
+                                        </div>  
+
+                                  
                                     </form>
                                 </div>
+                             
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><p>Thank you for your time!</p></div>
+                                    <div class="small">
+                                        <p>Thank you for your time!</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
-        <div id="layoutAuthentication_footer">
-            <footer class="py-4 bg-light" id="footer">
-                <div class="container px-4">
-
-                    <h3>Purr-fect pets</h3>
-                    <p>People trust us, pets love us.</p>
-                    <div class="social-links">
-                        <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i
-                                class="bx bxl-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    </div>
-                    <div class="copyright">
-                        &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
-                    </div>
-                </div>
-
-            </footer>
         </div>
     </div>
+    </main>
+    </div>
+    <div id="layoutAuthentication_footer">
+        <footer class="py-4 bg-light" id="footer">
+            <div class="container px-4">
+
+                <h3>Purr-fect pets</h3>
+                <p>People trust us, pets love us.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        function FetchState(id) {
+            $('#time').html('');
+            $.ajax({
+                type: 'post',
+                url: 'appointment.php',
+                data: {
+                    date_id: id
+                },
+                success: function(data) {
+                    $('#time').html(data);
+                }
+
+            })
+        }
+    </script>
 </body>
 <link href="css/styles.css" rel="stylesheet" />
+
 </html>
+
+<!-- The function below is responsibile for cascading the comboboxes using AJAX -->
+
+<?php
+include_once '../connection.php';
+
+if (isset($_POST['date_id'])) {
+    $query = "SELECT * FROM appointment where available=1 and date='" . $_POST['date_id'] . "'";
+    $result = $db->query($query);
+    if ($result->num_rows > 0) {
+        echo '<option value="">Select Time</option>';
+        while ($row = $result->fetch_assoc()) {
+            echo '<option value=' . $row['time'] . '>' . $row['time'] . '</option>';
+        }
+    } else {
+
+        echo '<option>No Time Found!</option>';
+    }
+}
+
+
+?>
