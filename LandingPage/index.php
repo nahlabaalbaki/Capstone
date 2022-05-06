@@ -125,7 +125,7 @@ $results1 = $stmt1->get_result();
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Welcome <?php echo $_SESSION['username']; ?> to <span>Purr-fect Pets</span></h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <p class="animate__animated animate__fadeInUp">There’s nothing like the unconditional love of a pet. They show you affection, give you a sense of purpose, and greet you every day when you come home.</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
@@ -135,9 +135,9 @@ $results1 = $stmt1->get_result();
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Treating pets like Royalty</h2>
+              <p class="animate__animated animate__fadeInUp">We see pets as individuals from the family, so our point is to give clients items and administrations that can guarantee their darling pet will appreciate an upbeat, solid life. Get your pet groomed from head till paw!</p>
+              <a href="../GroomingPage/appointment.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Book Now</a>
             </div>
           </div>
         </div>
@@ -146,9 +146,9 @@ $results1 = $stmt1->get_result();
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Your pet's best vacay</h2>
+              <p class="animate__animated animate__fadeInUp">If you ever feel like you are too busy to give time to your pet, just book a few days at our shop. They will get the best treats, toys , and play time with other pets!</p>
+              <a href="../calendar/calendar.php" class="btn-get-started animate__animated animate__fadeInUp scrollto">Book Now</a>
             </div>
           </div>
         </div>
@@ -213,12 +213,10 @@ $results1 = $stmt1->get_result();
             <img src="assets/img/sideCat.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Treating pets like Royalty</h3>
+            <h3>Purr-fect Pets</h3>
             
-            <p class="fst-italic">There’s nothing like the unconditional love of a pet. They show you affection, give you a sense of purpose,
-            and greet you every day when you come home.</p>
-            <p>Our company has been working with pets since 2012 while providing our clients with the best services for
-            their precious pets. </p>
+            <p class="fst-italic">We know how essential the human-creature bond is, so our promise to quality creature care reaches out to each aspect of our business.</p>
+            <p>Established in 1986, Purr-fect Pets, Inc. is the biggest strength pet retailer of administrations and answers for the lifetime needs of pets. At Purr-fect Pets , we cherish pets, and we trust pets improve us as individuals. Consistently with each association, ‘Organization Name’ ‘s enthusiastic partners help convey pet guardians closer to their pets so they can live progressively satisfying lives. </p>
             <h3>Why do we have adoption services?</h3>
             <p>Practices and conditions in most pet stores are unethical and downright abhorrent in many cases.
                 Pets live in filthy conditions without adequate food, water, or veterinary care. Many pet stores also
@@ -262,7 +260,7 @@ $results1 = $stmt1->get_result();
                 </svg>
                 <i class="bx bx-file"></i>
               </div>
-              <h4><a href="#portfolio">Pet Grooming</a></h4>
+              <h4><a href="../GroomingForm/appointment.php">Pet Grooming</a></h4>
               <p>Bathe your pet in luxury since every pet desrves celebrity treatment. You can also request a custom-cut
                 from nose to butt.</p>
             </div>
@@ -276,7 +274,7 @@ $results1 = $stmt1->get_result();
                 </svg>
                 <i class="bx bx-arch"></i>
               </div>
-              <h4><a href="">Pet Boarding</a></h4>
+              <h4><a href="../calendar/calendar.php">Pet Boarding</a></h4>
               <p>You can rely on us to make sure your pets have an elite vacation while you're out on yours.</p>
             </div>
           </div>
