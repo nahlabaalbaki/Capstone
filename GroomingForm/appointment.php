@@ -82,12 +82,10 @@ $result = $db->query($query);
 
                                         <div class="mt-4 mb-0">
                                             <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="../LandingPage/index.php">Submit</a></button>
-                                        </div>  
-
-                                  
+                                        </div>
                                     </form>
                                 </div>
-                             
+                        
                                 <div class="card-footer text-center py-3">
                                     <div class="small">
                                         <p>Thank you for your time!</p>
@@ -97,30 +95,30 @@ $result = $db->query($query);
                         </div>
                     </div>
                 </div>
+        
+            </main>
         </div>
-    </div>
-    </main>
-    </div>
-    <div id="layoutAuthentication_footer">
-        <footer class="py-4 bg-light" id="footer">
-            <div class="container px-4">
+    
+        <div id="layoutAuthentication_footer">
+            <footer class="py-4 bg-light" id="footer">
+                <div class="container px-4">
 
-                <h3>Purr-fect pets</h3>
-                <p>People trust us, pets love us.</p>
-                <div class="social-links">
-                    <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <h3>Purr-fect pets</h3>
+                    <p>People trust us, pets love us.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
+                    </div>
                 </div>
-                <div class="copyright">
-                    &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
-                </div>
-            </div>
 
-        </footer>
-    </div>
+            </footer>
+        </div>
     </div>
 
 
@@ -167,6 +165,4 @@ if (isset($_POST['date_id'])) {
         echo '<option>No Time Found!</option>';
     }
 }
-
-
 ?>
