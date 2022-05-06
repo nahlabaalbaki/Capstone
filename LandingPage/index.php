@@ -511,8 +511,9 @@ $results1 = $stmt1->get_result();
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="feedbackmethod.php" method="post" class="php-email-form">
+            
               <div class="row">
+              <form action="feedbackmethod.php" method="post" class="php-email-form">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
@@ -567,8 +568,9 @@ $results1 = $stmt1->get_result();
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
+              </form>
               <div class="text-center"><button name ="submit" type="submit">Send Message</button></div>
-            </form>
+         
           </div>
 
         </div>
