@@ -1,8 +1,8 @@
 <?php
-include '../connection2.php';
+include '../connection.php';
 $query = "SELECT DISTINCT date FROM appointment WHERE date>CURRENT_DATE and date<=CURRENT_DATE+7";
 
-$result = $db->query($query);
+$result = $connection->query($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,6 +55,7 @@ $result = $db->query($query);
 
 
 
+
                                         <label for="inputGrooming">Select Day:</label>
                                         <select name="date" class="form-control" onchange="FetchState(this.value)" required>
                                             <option value="">Select Date</option>
@@ -81,7 +82,8 @@ $result = $db->query($query);
                                 
 
                                         <div class="mt-4 mb-0">
-                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="../LandingPage/index.php">Submit</a></button>
+                                            <!-- <input style="margin-left:9cm;" type="submit" name="submit" id="submit" class="button"> -->
+                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="">Submit</a></button>
                                         </div>
                                     </form>
                                 </div>
@@ -95,30 +97,28 @@ $result = $db->query($query);
                         </div>
                     </div>
                 </div>
-        
-            </main>
-        </div>
-    
-        <div id="layoutAuthentication_footer">
-            <footer class="py-4 bg-light" id="footer">
-                <div class="container px-4">
+    </main>
+    </div>
+    <div id="layoutAuthentication_footer">
+        <footer class="py-4 bg-light" id="footer">
+            <div class="container px-4">
 
-                    <h3>Purr-fect pets</h3>
-                    <p>People trust us, pets love us.</p>
-                    <div class="social-links">
-                        <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    </div>
-                    <div class="copyright">
-                        &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
-                    </div>
+                <h3>Purr-fect pets</h3>
+                <p>People trust us, pets love us.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/_reinaaaa_" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/_reiinaaa_/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 </div>
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Purr-fect pets</span></strong>. All Rights Reserved
+                </div>
+            </div>
 
-            </footer>
-        </div>
+        </footer>
+    </div>
     </div>
 
 
@@ -154,7 +154,7 @@ include_once '../connection.php';
 
 if (isset($_POST['date_id'])) {
     $query = "SELECT * FROM appointment where available=1 and date='" . $_POST['date_id'] . "'";
-    $result = $db->query($query);
+    $result = $connection->query($query);
     if ($result->num_rows > 0) {
         echo '<option value="">Select Time</option>';
         while ($row = $result->fetch_assoc()) {
@@ -165,4 +165,6 @@ if (isset($_POST['date_id'])) {
         echo '<option>No Time Found!</option>';
     }
 }
+
+
 ?>
