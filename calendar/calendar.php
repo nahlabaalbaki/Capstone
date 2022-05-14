@@ -34,20 +34,20 @@
         <div class="header-container clearfix">
             <h1 class="title" data-go="#top" title="Oh, hi! :)"><span>Purr-fect</span>Pets</h1>
             <ul>
-                <li data-go="#themes">
-                    <a>Themes</a>
-                </li>
-                <li data-go="#demos">
-                    <a>Demo</a>
-                </li>
-                <li data-go="#usage">
-                    <a>Usage</a>
-                </li>
-                <li data-go="#settings">
-                    <a>Settings</a>
+                <li>
+                    <a href="../LandingPage/index.php">Home</a>
                 </li>
                 <li>
-                    <a href="https://github.com/edlynvillegas/evo-calendar" target="_blank" title="get it on github">Github</a>
+                    <a href="../LandingPage/index.php#about">About</a>
+                </li>
+                <li>
+                    <a href="../LandingPage/index.php#services">Services</a>
+                </li>
+                <li>
+                    <a href="../LandingPage/index.php#portfolio">Adoption</a>
+                </li>
+                <li>
+                    <a href="../LandingPage/index.php#team">Team</a>
                 </li>
             </ul>
         </div>
