@@ -63,7 +63,8 @@ if (isset($_POST['submit'])) {
 		</script>';
 	}
 
-
+	
+	header("Location:../LandingPage/index.php");
 	
 
 
