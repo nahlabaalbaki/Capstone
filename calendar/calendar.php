@@ -10,7 +10,7 @@ if(!isset($_SESSION["username"])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Evo Calendar</title>
+    <title>Calendar</title>
 
     <meta charset="utf-8">
     <meta name="description" content="Simple Modern-looking Event Calendar Plugin">
@@ -65,7 +65,7 @@ if(!isset($_SESSION["username"])){
         <div class="main-container">
             <section id="demos">
                 <div class="section-content">
-                    <p class="section-title --shrt">Book your appointment!</p>
+                    <p class="section-title --shrt">Book your room!</p>
                     <div class="console-log">
                         <div class="log-content">
                             <div class="--noshadow" id="demoEvoCalendar"></div>
@@ -78,7 +78,7 @@ if(!isset($_SESSION["username"])){
                         <div class="col-lg-7">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
-                                    <h3 class="text-center font-weight-light my-4">Book an appointment</h3>
+                                    <h3 class="text-center font-weight-light my-4">Book a room for your lovely pet</h3>
                                 </div>
                                 <div class="card-body">
                                     <form action="calendarmethod.php" method="post">
