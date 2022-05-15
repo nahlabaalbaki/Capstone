@@ -1,15 +1,4 @@
-/*!
- * Evo Calendar - Simple and Modern-looking Event Calendar Plugin
- *
- * Licensed under the MIT License
- * 
- * Version: 1.1.3
- * Author: Edlyn Villegas
- * Docs: https://edlynvillegas.github.com/evo-calendar
- * Repo: https://github.com/edlynvillegas/evo-calendar
- * Issues: https://github.com/edlynvillegas/evo-calendar/issues
- * 
- */
+
 
 ;(function(factory) {
     'use strict';
@@ -55,8 +44,8 @@
                         daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
                         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                         monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                        noEventForToday: "No event for today.. so take a rest! :)",
-                        noEventForThisDay: "No event for this day.. so take a rest! :)",
+                        noEventForToday: "You cant book for today sorry :(",
+                        noEventForThisDay: "Book starting today and have a nice vacation! :)",
                         previousYearText: "Previous year",
                         nextYearText: "Next year",
                         closeSidebarText: "Close sidebar",

@@ -69,12 +69,72 @@ if(!isset($_SESSION["username"])){
                     <div class="console-log">
                         <div class="log-content">
                             <div class="--noshadow" id="demoEvoCalendar"></div>
+                            
                         </div>
                     </div>
-                    <div class="action-buttons">
-                        <button class="btn-action" id="addBtn">ADD EVENT</button>
-                        <button class="btn-action" id="removeBtn" disabled>REMOVE EVENT</button>
+                    <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header">
+                                    <h3 class="text-center font-weight-light my-4">Book an appointment</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form action="calendarmethod.php" method="post">
+                                        <label for="inputBoarding">Which room do you prefer for your pet?</label>
+
+                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
+                                            <option selected>Choose here</option>
+                                            <option value="multi">Multiple Room</option>
+                                            <option value="single">Single Room</option>
+                                        </select>
+
+
+                                        <label for="inputBoarding">Form Date:</label>
+                                        <input type="date" name="dateFrom" value="<?php echo date('Y-m-d'); ?>" />
+                                        <!--<select name="date" class="form-control" onchange="FetchState(this.value)" required>
+                                            <option value="">Select Date</option>
+                                            <?php
+                                            // if ($result->num_rows > 0) {
+                                            //     while ($row = $result->fetch_assoc()) {
+                                            //         echo '<option value=' . $row['date'] . '>' . $row['date'] . '</option>';
+                                            //     }
+                                            // }
+                                            ?>
+                                        </select>-->
+                                
+                                        <div class="form-group">
+                                            <label for="pwd"> Till Date:</label>
+                                            <input type="date" name="dateTo" value="<?php echo date('Y-m-d'); ?>" />
+                                            <!-- <select name="time" id="time" class="form-control">
+                                                <option>Select Date</option>
+                                            </select> -->
+                                        </div>
+
+                                        <label for="inputComments">Any comments:</label>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="inputComments" type="text" name="inputComments" placeholder="Elaborate about your pet" />
+                                        </div>
+                                
+
+                                        <div class="mt-4 mb-0">
+                                            <!-- <input style="margin-left:9cm;" type="submit" name="submit" id="submit" class="button"> -->
+                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="">Submit</a></button>
+                                        </div>
+                                    </form>
+                                </div>
+                        
+                                <div class="card-footer text-center py-3">
+                                    <div class="small">
+                                        <p>Thank you for your time!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+    </main>
                 </div>
             </section>
         </div>
