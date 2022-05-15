@@ -2,6 +2,11 @@
 
 include("../connection.php");
 
+if(!isset($_SESSION["username"])){
+
+  header("Location:../LoginPage/login.php");
+}
+
 
 
 $query = "SELECT * FROM petsitters";
@@ -13,6 +18,8 @@ $query1 = "SELECT * FROM petimages";
 $stmt1 = $connection->prepare($query1);
 $stmt1->execute();
 $results1 = $stmt1->get_result();
+
+
 
 
 ?>
@@ -104,7 +111,7 @@ $results1 = $stmt1->get_result();
             </ul>
           </li> -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about"><?php echo $_SESSION['username']; ?></a></li>
+          <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

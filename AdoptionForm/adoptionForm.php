@@ -2,6 +2,11 @@
 
 include("../connection.php");
 
+if(!isset($_SESSION["username"])){
+
+    header("Location:../LoginPage/login.php");
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

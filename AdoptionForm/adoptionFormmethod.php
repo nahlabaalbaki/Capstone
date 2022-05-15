@@ -42,15 +42,19 @@ if(isset($_POST['submit'])){
     move_uploaded_file($tname, $uploads_dir.'/'.$document);
 	header("Location:../LandingPage/index.php");
 
-	$mysql = "INSERT into adoption(experience,financial,household,work,document) VALUES ('$experience','$financial','$household','$work','$document')";
-    
-	if(mysqli_query($connection,$mysql)){
- 
-    echo "Document Sucessfully uploaded";
-    }
-    else{
-        echo "Error";
-    }
+	$query = "SELECT * FROM owners where username='".$_SESSION["username"]."'";
+	$stmt = $connection->prepare($query);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$user = $result->fetch_assoc();
+
+
+	$mysql = $connection->prepare("INSERT into adoption(experience,financial,household,work,document,owner_id4) VALUES (?,?,?,?,?,?)");
+    $mysql->bind_param("sssssi",$experience,$financial,$household,$work,$document,$user["owner_id"]);
+    $mysql->execute();
+	
+	$mysql->close();
+	$connection->close();
 
 
 

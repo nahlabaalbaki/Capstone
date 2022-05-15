@@ -2,8 +2,6 @@
 
 include("../connection.php");
 
-// $owner_id= $_SESSION['owner_id'];
-
 if(isset($_POST['submit'])){
 
 // 	if(isset($_POST["name"]) && $_POST["name"] != ""){

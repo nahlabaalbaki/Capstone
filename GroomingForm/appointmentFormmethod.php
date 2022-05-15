@@ -1,6 +1,7 @@
 <?php
 
-include '../connection2.php';
+include ("../connection.php");
+
 
 if (isset($_POST['submit'])) {
 
@@ -36,11 +37,19 @@ if (isset($_POST['submit'])) {
 		die("No Comment");
 	}
 
-	//Change the owner_id3 in the query below from 10 to a dynamic id based on the current user logged in. y3ne badle l 10 be a variable
-	$mysql = "Update appointment set available=0,owner_id3=10,comments='$comments',type='$type' where date='$date' and time='$time'";
+	$query = "SELECT * FROM owners where username='".$_SESSION["username"]."'";
+	$stmt = $connection->prepare($query);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$user = $result->fetch_assoc();
 
-	$con = mysqli_connect("localhost:3310", "root", "", "petshopdb");
-	if (mysqli_query($con, $mysql)) {
+	//Change the owner_id3 in the query below from 10 to a dynamic id based on the current user logged in. y3ne badle l 10 be a variable
+	$mysql = "Update appointment set available=0,owner_id3='".$user["owner_id"]."',comments='$comments',type='$type' where date='$date' and time='$time'";
+
+	header("Location:../LandingPage/index.php");
+
+	//$con = mysqli_connect("localhost:3310", "root", "", "petshopdb");
+	if (mysqli_query($connection, $mysql)) {
 		echo '<script type="text/javascript">
 
         window.onload = function () { alert("Data Updated successfully"); }
@@ -55,7 +64,7 @@ if (isset($_POST['submit'])) {
 	}
 
 
-	//header("Location:appointment.php");
+	
 
 
 }
