@@ -37,7 +37,7 @@ $result = $connection->query($query);
 <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Purr-fect Pets</a></h1>
+      <h1 class="logo me-auto"><a class="logo" href="index.html">Purr-fect Pets</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -48,7 +48,6 @@ $result = $connection->query($query);
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#services">Services</a></li>
           <li><a class="nav-link scrollto " href="../LandingPage/index.php#portfolio">Adoption</a></li>
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#team">Team</a></li>
-        
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
