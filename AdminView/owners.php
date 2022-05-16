@@ -126,49 +126,52 @@ if(!isset($_SESSION["username"])){
                             </div>
                         </div>
 
-                        <!-- APPOINTMENTS -->
+                        <!-- OWNERS -->
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Appointments Schedule
+                                Owners 
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         
                                         <tr>
-                                            <th>Appointment ID</th>
-                                            <th>Type</th>
-                                            <th>Date</th>
-                                            <th>Time</th>
-                                            <th>Available</th>
-                                            <th>Comments</th>
-                                            <th>OwnerID</th>
+                                            <th>Owner ID</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                            <th>Phone Number</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                            <th></th>
 
                                         </tr>
                                       
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Appointment ID</th>
-                                            <th>Type</th>
-                                            <th>Date</th>
-                                            <th>Time</th>
-                                            <th>Available</th>
-                                            <th>Comments</th>
                                             <th>Owner ID</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                            <th>Phone Number</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                            <th></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <?php while($row = $results->fetch_assoc()){ ?>
                                             <tr>
-                                                <td><?php  echo $row["appointment_id"];  ?></td>
-                                                <td><?php  echo $row["type"];  ?></td>
-                                                <td><?php  echo $row["date"];  ?></td>
-                                                <td><?php  echo $row["time"];  ?></td>
-                                                <td><?php  echo $row["available"];  ?></td>
-                                                <td><?php  echo $row["comments"];  ?></td>
-                                                <td><?php  echo $row["owner_id3"];  ?></td>
+                                                <td><?php  echo $row["owner_id"];  ?></td>
+                                                <td><?php  echo $row["first_name"];  ?></td>
+                                                <td><?php  echo $row["last_name"];  ?></td>
+                                                <td><?php  echo $row["username"];  ?></td>
+                                                <td><?php  echo $row["phone_nb"];  ?></td>
+                                                <td><?php  echo $row["email"];  ?></td>
+                                                <td><?php  echo $row["address"];  ?></td>
+                                                <td><button class="bot btn">Delete</button></td>
                                             </tr>
                                         <?php } ?>
                                         
@@ -176,7 +179,7 @@ if(!isset($_SESSION["username"])){
                                 </table>
                             </div>
                         </div>
-                        <!-- END APPOINTMENTS -->
+                        <!-- END OWNERS -->
                         
 
 
