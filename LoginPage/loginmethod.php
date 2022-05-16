@@ -51,7 +51,7 @@ if(isset($_POST["login"])){
 			}
 			else if($row["owner_type"]=="admin"){
 				if($password_input==$password_table){
-					header("Location:../AdminView/index.php");
+					header("Location:../AdminView/team.php");
 					//$_SESSION['valid'] = true;
 					//$_SESSION['timeout'] = time();
 					$_SESSION['username'] = $username_table;
