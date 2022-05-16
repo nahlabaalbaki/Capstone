@@ -69,6 +69,7 @@ if(!isset($_SESSION["username"])){
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
+
                         <div class="row">
                             <div class="col-xl-2 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
@@ -132,6 +133,7 @@ if(!isset($_SESSION["username"])){
                                 <i class="fas fa-table me-1"></i>
                                 Owners 
                             </div>
+                            
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>

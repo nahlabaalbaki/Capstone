@@ -132,6 +132,7 @@ if(!isset($_SESSION["username"])){
                                 <i class="fas fa-table me-1"></i>
                                 Owners 
                             </div>
+                            <button class="bot"><a href="../AddPet/addPet.php">Add New Pet</a></button>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
