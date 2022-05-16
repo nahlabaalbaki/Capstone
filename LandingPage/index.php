@@ -415,7 +415,7 @@ $results1 = $stmt1->get_result();
       </div>
     </section>End Contact Section -->
 
-  </main>End #main -->
+  </main><!--End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
