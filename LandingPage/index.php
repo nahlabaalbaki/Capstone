@@ -110,7 +110,7 @@ $results1 = $stmt1->get_result();
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Contact</a></li>
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -482,7 +482,7 @@ $results1 = $stmt1->get_result();
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
@@ -566,7 +566,7 @@ $results1 = $stmt1->get_result();
                 </div>
 
               </div> -->
-              <div class="form-group mt-3">
+              <!-- <div class="form-group mt-3">
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
@@ -583,9 +583,9 @@ $results1 = $stmt1->get_result();
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
