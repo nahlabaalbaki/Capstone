@@ -45,15 +45,14 @@ if(!isset($_SESSION["username"])){
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Adoption</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Contact</a></li> -->
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
@@ -135,7 +134,7 @@ if(!isset($_SESSION["username"])){
                                 <i class="fas fa-table me-1"></i>
                                 Pet Sitters Team
                             </div>
-                            <button class="bot"><a href="../AddMember/member.php">Add New Team Member</a></button>
+                            <button class="bot"><a href="../AddMember/addmember.php">Add New Team Member</a></button>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
@@ -171,7 +170,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["experience"];  ?></td>
                                                 <td><?php  echo $row["availability"];  ?></td>
                                                 <td><?php  echo $row["phone_number"];  ?></td>
-                                                <td><button class="bot btn">Delete</button></td>
+                                                <td><button class="bot btn"><a href="deletepetsitter.php?petsitters_id=<?php echo $row['petsitters_id']; ?>"></a>Delete</button></td>
                                             </tr>
                                         <?php } ?>
                                         

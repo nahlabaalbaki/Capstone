@@ -45,15 +45,14 @@ if(!isset($_SESSION["username"])){
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Adoption</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Contact</a></li> -->
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
@@ -173,7 +172,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["phone_nb"];  ?></td>
                                                 <td><?php  echo $row["email"];  ?></td>
                                                 <td><?php  echo $row["address"];  ?></td>
-                                                <td><button class="bot btn">Delete</button></td>
+                                                <td><button class="bot btn"><a href="deleteowner.php?owner_id=<?php echo $row['owner_id']; ?>"></a>Delete</button></td>
                                             </tr>
                                         <?php } ?>
                                         
