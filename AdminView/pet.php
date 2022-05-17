@@ -162,7 +162,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["image"];  ?></td>
                                                 <td><?php  echo $row["pet_type"];  ?></td>
                                                 <td><?php  echo $row["pet_age"];  ?></td>
-                                                <td><button class="bot btn"><a href="deletepet.php?image_id=<?php echo $row['image_id']; ?>"></a>Delete</button></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="deletepet.php?image_id=<?php echo $row['image_id']; ?>">Delete</a></button></td>
                                             </tr>
                                         <?php } ?>
                                         

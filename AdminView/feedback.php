@@ -143,6 +143,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Message</th>
                                             <th>Rate</th>
                                             <th>OwnerID</th>
+                                            <th></th>
                                         </tr>
                                       
                                     </thead>
@@ -155,6 +156,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Message</th>
                                             <th>Rate</th>
                                             <th>OwnerID</th>
+                                            <th></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -167,6 +169,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["message"];  ?></td>
                                                 <td><?php  echo $row["rate"];  ?></td>
                                                 <td><?php  echo $row["owner_id"];  ?></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="deletefeedback.php?feedback_id=<?php echo $row['feedback_id']; ?>">Delete</a></button></td>
                                             </tr>
                                         <?php } ?>
                                         

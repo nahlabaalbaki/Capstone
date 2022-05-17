@@ -170,7 +170,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["available"];  ?></td>
                                                 <td><?php  echo $row["comments"];  ?></td>
                                                 <td><?php  echo $row["owner_id3"];  ?></td>
-                                                <td><button class="bot btn"><a href="deleteappointment.php?appointment_id=<?php echo $row['appointment_id']; ?>"></a>Delete</button></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="deleteappointment.php?appointment_id=<?php echo $row['appointment_id']; ?>">Delete</a></button></td>
                                             </tr>
                                         <?php } ?>
                                         

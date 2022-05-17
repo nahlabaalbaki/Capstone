@@ -143,6 +143,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Work</th>
                                             <th>Document</th>
                                             <th>OwnerID</th>
+                                            <th></th>
                                         </tr>
                                       
                                     </thead>
@@ -155,6 +156,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Work</th>
                                             <th>Document</th>
                                             <th>OwnerID</th>
+                                            <th></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -165,8 +167,9 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["financial"];  ?></td>
                                                 <td><?php  echo $row["household"];  ?></td>
                                                 <td><?php  echo $row["work"];  ?></td>
-                                                <td><button class="bot btn"><a class="btn btn-primary" href="Documents/<?php echo $row["document"];  ?>"></a>Download</button></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="../Documents/<?php echo $row["document"];  ?>">Download</a></button></td>
                                                 <td><?php  echo $row["owner_id4"];  ?></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="deleteadoption.php?adoption_id=<?php echo $row['adoption_id']; ?>">Delete</a></button></td>
                                             </tr>
                                         <?php } ?>
                                         

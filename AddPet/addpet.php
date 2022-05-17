@@ -2,6 +2,11 @@
 
 include("../connection.php");
 
+if(!isset($_SESSION["username"])){
+
+    header("Location:../LoginPage/login.php");
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +31,22 @@ include("../connection.php");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous">
     </script>
 </head>
+<header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
 
+      <h1 class="logo me-auto"><a class="logo">Purr-fect Pets</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
+        </ul>
+        
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
 <body class="bg-primary">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
@@ -36,36 +56,37 @@ include("../connection.php");
                         <div class="col-lg-7">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
-                                    <h3 class="text-center font-weight-light my-4">Add Team Member</h3>
+                                    <h3 class="text-center font-weight-light my-4">Add Member Form</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="addmembermethod.php" method="POST">
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3 mb-md-0">
-                                                    <input class="form-control" id="inputFirstName" type="text"
-                                                        name="pet_type" placeholder="Enter pet type"
-                                                        Required />
-                                                    <label for="inputFirstName">Pet Type</label>
-                                                </div>
+                                    <form action="addpetmethod.php" method="POST" enctype="multipart/form-data">       
+                                            
+                                            <label>Pet Age</label>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputExperience" type="text"
+                                                    name="pet_age"
+                                                    Required />            
                                             </div>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputEmail" type="text" name="pet_age"
-                                                Required />
-                                            <label for="inputEmail">Age</label>
-                                        </div>
 
-                                        </div><br>
-                                            <label class="doc" for="inputDocument">Upload Pet Images</label><br><br>
+                                            <label>Pet Type</label>
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="inputFinancial" type="text"
+                                                    name="pet_type"
+                                                    Required />
+                                            </div>
+
+                                            <label>Upload Image of Pet</label><br>
                                             <div class="form-floating mb-3 doc">
-                                                <input  id="inputDocument" type="File" name="file" Required />
+                                                <input  id="inputDocument" type="file" name="file" 
+                                                    Required />
+                                                
                                             </div>
-
-                                        </div>
+                                            
+                                    
+                                        
                                         <div class="mt-4 mb-0">
-                                            <div class="d-grid"><button class="btn bot btn-block" name="submit"
-                                                    type='submit' value="Upload" >Add Pet</button></div>
+                                            <div class="d-grid"><button class="btn bot btn-block" name='submit'
+                                                    type='submit' value="Upload" >Add Pet</a></button></div>
                                         </div>
                                     </form>
                                 </div>
