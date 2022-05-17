@@ -4,59 +4,36 @@ include("../connection.php");
 
 if(isset($_POST['submit'])){
 
-	if(isset($_POST["name"]) && $_POST["name"] != ""){
-		$name =  $_POST["name"];
+	if(isset($_POST["date"]) && $_POST["date"] != ""){
+		$date =  $_POST["date"];
 	
 	}else{
 		die("No access");
 
 	}
-	if(isset($_POST["age"]) && $_POST["age"] != ""){
-		$age =  $_POST["age"];
+	if(isset($_POST["time"]) && $_POST["time"] != ""){
+		$time =  $_POST["time"];
 	
 	}else{
 		die("No access");
 
 	}
 
-	if(isset($_POST["experience"]) && $_POST["experience"] != ""){
-		$experience =  $_POST["experience"];
-	}else{
-		die("No access");
-	}
+	
 
-	if(isset($_POST["availability"]) && $_POST["availability"] != ""){
-		$availability = $_POST["availability"];
+	if(isset($_POST["available"]) && $_POST["available"] != ""){
+		$available = $_POST["available"];
 	
 	}else{
 		die("No access");
 	}
 
-	if(isset($_POST["phone_number"]) && $_POST["phone_number"] != ""){
-		$phone_number = $_POST["phone_number"];
-	
-	}else{
-		die("No access");
-	}
-
-	echo "hey1";
-
-	if(isset($_FILES["file"]["name"]) && $_FILES["file"]["name"] != ""){
-		$image =  $_FILES["file"]["name"];
-		$tname = $_FILES["file"]["tmp_name"];
-	}else{
-		die("No access");
-
-	}
-	echo "hey2";
-	$uploads_dir = '../Images';
-    move_uploaded_file($tname, $uploads_dir.'/'.$image);
-	header("Location:../AdminView/team.php");
+	header("Location:../AdminView/appointment.php");
 
 
 
-	$mysql = $connection->prepare("INSERT into petsitters(name,age,experience,availability,phone_number,image) VALUES (?,?,?,?,?,?)");
-    $mysql->bind_param("sissis",$name,$age,$experience,$availability,$phone_number,$image);
+	$mysql = $connection->prepare("INSERT into appointment(date,time,available) VALUES (?,?,?)");
+    $mysql->bind_param("ssi",$date,$time,$available);
     $mysql->execute();
 	
 	$mysql->close();

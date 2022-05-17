@@ -59,55 +59,34 @@ if(!isset($_SESSION["username"])){
                                     <h3 class="text-center font-weight-light my-4">Add Member Form</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="addmembermethod.php" method="POST" enctype="multipart/form-data">       
+                                    <form action="addappmethod.php" method="POST" enctype="multipart/form-data">       
 
-                                            <label>Name</label>
+                                            <label>Date</label>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputExperience" type="text"
-                                                    name="name" placeholder="Name"
+                                                <input class="form-control" id="date" type="date"
+                                                    name="date" placeholder="Date"
                                                     Required />            
                                             </div>
 
-                                            <label>Age</label>
+                                            <label>Time</label>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputFinancial" type="number"
-                                                    name="age" placeholder="Age"
+                                                <input class="form-control" id="time" type="text"
+                                                    name="time" placeholder="Time"
                                                     Required />
-                                            </div>
-
-                                            <label>Experience</label>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputHousehold" type="text"
-                                                    name="experience" placeholder="experience"
-                                                    Required />
-                                                
                                             </div>
 
                                             <label>Availability</label>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputWork" type="text"
-                                                    name="availability" placeholder="Availability"
+                                                <input class="form-control" id="available" type="number"
+                                                    name="available" placeholder="Available"
                                                     Required />
-                                            </div>
-
-                                            <label>Phone Number</label>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputFinancial" type="number"
-                                                    name="phone_number" placeholder="Phone Number"
-                                                    Required />
-                                            </div>
-
-                                            <label>Upload Image of Member</label><br>
-                                            <div class="form-floating mb-3 doc">
-                                                <input  id="inputDocument" type="file" name="file" 
-                                                    Required />
+                                                
                                             </div>
                                             
-                                    
                                         
                                         <div class="mt-4 mb-0">
                                             <div class="d-grid"><button class="btn bot btn-block" name='submit'
-                                                    type='submit' value="Upload" >Add Member</a></button></div>
+                                                    type='submit' value="Upload" >Add Slot</a></button></div>
                                         </div>
                                     </form>
                                 </div>
