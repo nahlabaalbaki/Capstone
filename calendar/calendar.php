@@ -1,7 +1,7 @@
 <?php
 
-include("../connection.php");
-
+// include("../connection.php");
+require_once "../connection.php";
 if(!isset($_SESSION["username"])){
 
     header("Location:../LoginPage/login.php");
@@ -82,6 +82,7 @@ if(!isset($_SESSION["username"])){
                                 </div>
                                 <div class="card-body">
                                     <form action="calendarmethod.php" method="post">
+                                        
                                         <label for="inputBoarding">Which room do you prefer for your pet?</label>
 
                                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
@@ -90,26 +91,14 @@ if(!isset($_SESSION["username"])){
                                             <option value="single">Single Room</option>
                                         </select>
 
-
-                                        <label for="inputBoarding">Form Date:</label>
-                                        <input type="date" name="dateFrom" value="<?php echo date('Y-m-d'); ?>" />
-                                        <!--<select name="date" class="form-control" onchange="FetchState(this.value)" required>
-                                            <option value="">Select Date</option>
-                                            <?php
-                                            // if ($result->num_rows > 0) {
-                                            //     while ($row = $result->fetch_assoc()) {
-                                            //         echo '<option value=' . $row['date'] . '>' . $row['date'] . '</option>';
-                                            //     }
-                                            // }
-                                            ?>
-                                        </select>-->
-                                
+                                        <label for="inputBoarding">Form Date:</label> 
+                                        <input type="date" name="dateFrom" />
+                           
+                                        
                                         <div class="form-group">
                                             <label for="pwd"> Till Date:</label>
-                                            <input type="date" name="dateTo" value="<?php echo date('Y-m-d'); ?>" />
-                                            <!-- <select name="time" id="time" class="form-control">
-                                                <option>Select Date</option>
-                                            </select> -->
+                                            <input type="date" name="dateTo"  />
+                                            
                                         </div>
 
                                         <label for="inputComments">Any comments:</label>
@@ -120,7 +109,7 @@ if(!isset($_SESSION["username"])){
 
                                         <div class="mt-4 mb-0">
                                             <!-- <input style="margin-left:9cm;" type="submit" name="submit" id="submit" class="button"> -->
-                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="">Submit</a></button>
+                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit">Submit</button>
                                         </div>
                                     </form>
                                 </div>

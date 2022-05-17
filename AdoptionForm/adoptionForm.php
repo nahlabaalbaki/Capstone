@@ -1,7 +1,7 @@
 <?php
 
-include("../connection.php");
-
+// include("../connection.php");
+require_once "../connection.php";
 if(!isset($_SESSION["username"])){
 
     header("Location:../LoginPage/login.php");
@@ -104,7 +104,7 @@ if(!isset($_SESSION["username"])){
                                         
                                         <div class="mt-4 mb-0">
                                             <div class="d-grid"><button class="btn bot btn-block" name='submit'
-                                                    type='submit' value="Upload" ><a href="../LandingPage/index.php">Submit</a></button></div>
+                                                    type='submit' value="Upload" >Submit</button></div>
                                         </div>
                                     </form>
                                 </div>

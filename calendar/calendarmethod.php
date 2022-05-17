@@ -10,6 +10,7 @@ if (isset($_POST['submit'])) {
 	} else {
 		die("No Date");
 	}
+
 	if (isset($_POST["dateTo"]) && $_POST["dateTo"] != "") {
 		$dateTo =  $_POST["dateTo"];
 	} else {
@@ -44,7 +45,7 @@ if (isset($_POST['submit'])) {
 	$user = $result->fetch_assoc();
 
 
-	$mysql = $connection->prepare("INSERT into calendar(type,dateFrom,dateTo,comments,owner_id5 VALUES (?,?,?,?,?)");
+	$mysql = $connection->prepare("INSERT into boarding(room,start_date,end_date,comments,owner_id2) VALUES (?,?,?,?,?)");
     $mysql->bind_param("ssssi",$type,$dateFrom,$dateTo,$comments,$user["owner_id"]);
     $mysql->execute();
 	

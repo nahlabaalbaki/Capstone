@@ -1,10 +1,12 @@
 <?php
+
 include("../connection.php");
 
-if(!isset($_SESSION["username"])){
 
-    header("Location:../LoginPage/login.php");
-  }
+// if(!isset($_SESSION["username"])){
+
+//     header("Location:../LoginPage/login.php");
+//   }
 $query = "SELECT DISTINCT date FROM appointment WHERE date>CURRENT_DATE and date<=CURRENT_DATE+7";
 
 $result = $connection->query($query);
@@ -51,7 +53,7 @@ $result = $connection->query($query);
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        
       </nav><!-- .navbar -->
 
     </div>
