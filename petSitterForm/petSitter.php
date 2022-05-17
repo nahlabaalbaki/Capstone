@@ -105,7 +105,7 @@ if(!isset($_SESSION["username"])){
                                         <h2>10$ per hour</h2>
                                         <br>
                                     <label for="sitter"><h3>Who would you like to pet sit?</h3></label>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="name" id="type">
                                         <option selected>Choose here</option>
                                         <?php
                                             if ($result1->num_rows > 0) {
