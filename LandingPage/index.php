@@ -307,8 +307,7 @@ $results1 = $stmt1->get_result();
           </div>
           <?php } ?>
         </div>
-
-      </div>
+        <div class="text-center"><button name ="submit"><a href="../petSitterForm/petSitter.php">Check Now</a></button></div>
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
