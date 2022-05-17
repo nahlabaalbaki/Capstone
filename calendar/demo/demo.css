@@ -49,6 +49,14 @@ body {
 form{
 	font-family: 'Fira Mono', monospace;
 }
+.prices{
+	background-color: #A07178;
+	border-radius: 4px;
+	color:#E6CCBE;
+	align-items: center;
+	padding: 10px;
+	margin-top:55px;
+  }
 .card {
 	position: relative;
 	display: flex;

@@ -7,7 +7,7 @@ if(!isset($_SESSION["username"])){
     header("Location:../LoginPage/login.php");
   }
 
-  $query = "SELECT * FROM feedback";
+  $query = "SELECT * FROM chosenSitter";
   $stmt = $connection->prepare($query);
   $stmt->execute();
   $results = $stmt->get_result();
@@ -58,7 +58,7 @@ if(!isset($_SESSION["username"])){
     </div>
   </header><!-- End Header -->
     <body class="sb-nav-fixed">
-        
+       
         
             <div id="layoutSidenav_content">
                 <main>
@@ -143,51 +143,37 @@ if(!isset($_SESSION["username"])){
                             </div>
                         </div>
 
-                         <!-- FEEDBACK -->
-                         <div class="card mb-4">
+                        <!-- OWNERS -->
+                        <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Feedback
+                                Owners 
                             </div>
+                            
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         
                                         <tr>
-                                            <th>Feedback ID</th>
+                                            <th>Chosen Sitter ID</th>
                                             <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Service</th>
-                                            <th>Message</th>
-                                            <th>Rate</th>
-                                            <th>OwnerID</th>
-                                            <th></th>
+                                            <th>Owner ID</th>
                                         </tr>
                                       
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                            <th>Feedback ID</th>
+                                            <th>Chosen Sitter ID</th>
                                             <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Service</th>
-                                            <th>Message</th>
-                                            <th>Rate</th>
-                                            <th>OwnerID</th>
-                                            <th></th>
+                                            <th>Owner ID</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <?php while($row = $results->fetch_assoc()){ ?>
                                             <tr>
-                                                <td><?php  echo $row["feedback_id"];  ?></td>
+                                                <td><?php  echo $row["chosenSitter_id"];  ?></td>
                                                 <td><?php  echo $row["name"];  ?></td>
-                                                <td><?php  echo $row["email"];  ?></td>
-                                                <td><?php  echo $row["service"];  ?></td>
-                                                <td><?php  echo $row["message"];  ?></td>
-                                                <td><?php  echo $row["rate"];  ?></td>
-                                                <td><?php  echo $row["owner_id"];  ?></td>
-                                                <td><button class="bot btn"><a class="bot btn" href="deletefeedback.php?feedback_id=<?php echo $row['feedback_id']; ?>">Delete</a></button></td>
+                                                <td><?php  echo $row["owner_id5"];  ?></td>
                                             </tr>
                                         <?php } ?>
                                         
@@ -195,7 +181,8 @@ if(!isset($_SESSION["username"])){
                                 </table>
                             </div>
                         </div>
-                        <!-- FEEDBACK END -->
+                        <!-- END OWNERS -->
+                        
 
 
                     </div>

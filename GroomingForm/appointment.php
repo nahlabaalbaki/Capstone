@@ -63,8 +63,22 @@ $result = $connection->query($query);
         <div id="layoutAuthentication_content">
             <main>
                 <div class="container">
+                
                     <div class="row justify-content-center">
-                        <div class="col-lg-7">
+                        <div class="col-lg-4 col-md-6 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="prices">
+                                <ul>
+                                    <br><br><br><br>
+                                    <li><h4>10$ for Hair Cut</h4></li>
+                                    <br><br><br><br>
+                                    <li><h4>5$ for Nail Trim</h4></li>
+                                    <br><br><br><br>
+                                    <li><h4>15$ for Bath</h4></li>
+                                    <br><br><br><br>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
                                     <h3 class="text-center font-weight-light my-4">Book an appointment</h3>
@@ -79,10 +93,6 @@ $result = $connection->query($query);
                                             <option value="hair">Get a hair cut</option>
                                             <option value="bath">Take a bath</option>
                                         </select>
-
-
-
-
 
                                         <label for="inputGrooming">Select Day:</label>
                                         <select name="date" class="form-control" onchange="FetchState(this.value)" required>

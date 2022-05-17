@@ -69,7 +69,7 @@ if(!isset($_SESSION["username"])){
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                         <div class="row">
-                            <div class="col-xl-2 col-md-6">
+                            <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Team</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -78,7 +78,7 @@ if(!isset($_SESSION["username"])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-md-6">
+                            <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
                                     <div class="card-body">Owners</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -87,7 +87,7 @@ if(!isset($_SESSION["username"])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-md-6">
+                            <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Appointments</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -96,7 +96,7 @@ if(!isset($_SESSION["username"])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-md-6">
+                            <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
                                     <div class="card-body">Pets</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -105,7 +105,7 @@ if(!isset($_SESSION["username"])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-md-6">
+                            <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
                                     <div class="card-body">Feedback</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
@@ -114,11 +114,29 @@ if(!isset($_SESSION["username"])){
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-md-6">
+                            <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
                                     <div class="card-body">Adoption</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="adoption.php">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Pet Sitter Requests</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="chosenSitters.php">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Pet Boarding</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="boarding.php">View Details</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>

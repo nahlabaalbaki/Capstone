@@ -96,12 +96,15 @@ if(!isset($_SESSION["username"])){
     </section><!-- End Team Section -->
                         <div class="col-lg-7">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                
                                 <div class="card-header">
                                     <h3 class="text-center font-weight-light my-4">Choose Pet Sitter</h3>
                                 </div>
                                 <div class="card-body">
                                     <form action="petSitterMethod.php" method="POST" enctype="multipart/form-data">
-                                    <label for="sitter">Who would you like to pet sit?</label>
+                                        <h2>10$ per hour</h2>
+                                        <br>
+                                    <label for="sitter"><h3>Who would you like to pet sit?</h3></label>
                                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
                                         <option selected>Choose here</option>
                                         <?php

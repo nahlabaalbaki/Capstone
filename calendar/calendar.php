@@ -75,6 +75,28 @@ if(!isset($_SESSION["username"])){
                     <main>
                 <div class="container">
                     <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="prices">
+                                <ul>
+                                    <li><h4>15$ per night</h4></li>
+                                    <br>
+                                    <li><h4>37$ per 3 nights</h4></li>
+                                    <br>
+                                    <li><h4>90$ per week</h4></li>
+                                    <br>
+                                    <li><h4>130$ per 10 nights</h4></li>
+                                    <br>
+                                    <li><h4>200$ per 15 nights</h4></li>
+                                    <br>
+                                    <li><h4>280$ per 20 nights</h4></li>
+                                    <br>
+                                    <li><h4>350$ per 25 nights</h4></li>
+                                    <br>
+                                    <li><h4>410$ per month</h4></li>
+                                
+                                </ul>
+                            </div>
+                        </div>
                         <div class="col-lg-7">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">

@@ -179,6 +179,14 @@ color: #E6CCBE;
     left: -100%;
   }
 }
+.prices{
+  background-color: #A07178;
+  border-radius: 4px;
+  color:#E6CCBE;
+  align-items: center;
+  padding: 10px;
+  margin-top:55px;
+}
 body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;

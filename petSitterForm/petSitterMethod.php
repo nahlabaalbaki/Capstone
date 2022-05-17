@@ -4,8 +4,8 @@ include("../connection.php");
 
 if(isset($_POST['submit'])){
 
-	if(isset($_POST["sitter"]) && $_POST["sitter"] != ""){
-		$sitter =  $_POST["sitter"];
+	if(isset($_POST["name"]) && $_POST["name"] != ""){
+		$sitter =  $_POST["name"];
 	
 	}else{
 		die("No access");
