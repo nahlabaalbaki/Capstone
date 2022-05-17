@@ -7,7 +7,7 @@ if(!isset($_SESSION["username"])){
     header("Location:../LoginPage/login.php");
   }
 
-  $query = "SELECT * FROM chosenSitter";
+  $query = "SELECT * FROM chosensitter";
   $stmt = $connection->prepare($query);
   $stmt->execute();
   $results = $stmt->get_result();
@@ -143,11 +143,11 @@ if(!isset($_SESSION["username"])){
                             </div>
                         </div>
 
-                        <!-- OWNERS -->
+                        <!-- PET SITTER REQUESTS -->
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Owners 
+                                Pet Sitter Requests 
                             </div>
                             
                             <div class="card-body">
@@ -157,6 +157,8 @@ if(!isset($_SESSION["username"])){
                                         <tr>
                                             <th>Chosen Sitter ID</th>
                                             <th>Name</th>
+                                            <th>Date</th>
+                                            <th>Duration</th>
                                             <th>Owner ID</th>
                                         </tr>
                                       
@@ -165,15 +167,19 @@ if(!isset($_SESSION["username"])){
                                         <tr>
                                             <th>Chosen Sitter ID</th>
                                             <th>Name</th>
+                                            <th>Date</th>
+                                            <th>Duration</th>
                                             <th>Owner ID</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <?php while($row = $results->fetch_assoc()){ ?>
                                             <tr>
-                                                <td><?php  echo $row["chosenSitter_id"];  ?></td>
+                                                <td><?php  echo $row["sitter_id"];  ?></td>
                                                 <td><?php  echo $row["name"];  ?></td>
-                                                <td><?php  echo $row["owner_id5"];  ?></td>
+                                                <td><?php  echo $row["date"];  ?></td>
+                                                <td><?php  echo $row["duration"];  ?></td>
+                                                <td><?php  echo $row["owner_id6"];  ?></td>
                                             </tr>
                                         <?php } ?>
                                         
@@ -181,7 +187,7 @@ if(!isset($_SESSION["username"])){
                                 </table>
                             </div>
                         </div>
-                        <!-- END OWNERS -->
+                        <!-- END PET SITTER REQUESTS -->
                         
 
 

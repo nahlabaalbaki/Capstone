@@ -182,7 +182,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["start_date"];  ?></td>
                                                 <td><?php  echo $row["end_date"];  ?></td>
                                                 <td><?php  echo $row["comments"];  ?></td>
-                                                <td><?php  echo $row["owner_id6"];  ?></td>
+                                                <td><?php  echo $row["owner_id2"];  ?></td>
                                             </tr>
                                         <?php } ?>
                                         

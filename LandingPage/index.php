@@ -204,7 +204,7 @@ $results1 = $stmt1->get_result();
                 </svg>
                 <i class="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="#team">Pet Sitter</a></h4>
+              <h4><a href="../petSitterForm/petSitter.php">Pet Sitter</a></h4>
               <p>The most affordable pet sitters you can find!
                 A premium experience for your pet. Any pick up spot.</p>
             </div>
@@ -307,7 +307,7 @@ $results1 = $stmt1->get_result();
           </div>
           <?php } ?>
         </div>
-        <div class="text-center"><button name ="submit"><a href="../petSitterForm/petSitter.php">Check Now</a></button></div>
+        
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->

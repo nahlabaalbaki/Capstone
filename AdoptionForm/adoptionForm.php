@@ -72,7 +72,7 @@ if(!isset($_SESSION["username"])){
                                                     name="experience" placeholder="Elaborate about your experience"
                                                     Required />            
                                             </div>
-                                            <label for="inputFinancial">Are you able to prvoide everything your pet needs?</label>
+                                            <label for="inputFinancial">Are you able to provide everything your pet needs?</label>
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputFinancial" type="text"
                                                     name="financial" placeholder="Elaborate about your financial situation"

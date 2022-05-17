@@ -78,6 +78,7 @@ if(!isset($_SESSION["username"])){
                     <div class="col-lg-4 col-md-6 justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                             <div class="prices">
                                 <ul>
+                                    <br><br><br>
                                     <li><h4>15$ per night</h4></li>
                                     <br>
                                     <li><h4>37$ per 3 nights</h4></li>
@@ -93,7 +94,7 @@ if(!isset($_SESSION["username"])){
                                     <li><h4>350$ per 25 nights</h4></li>
                                     <br>
                                     <li><h4>410$ per month</h4></li>
-                                
+                                    <br><br>
                                 </ul>
                             </div>
                         </div>
@@ -114,12 +115,12 @@ if(!isset($_SESSION["username"])){
                                         </select>
 
                                         <label for="inputBoarding">Form Date:</label> 
-                                        <input type="date" name="dateFrom" />
+                                        <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="dateFrom" />
                            
                                         
                                         <div class="form-group">
                                             <label for="pwd"> Till Date:</label>
-                                            <input type="date" name="dateTo"  />
+                                            <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="dateTo"  />
                                             
                                         </div>
 

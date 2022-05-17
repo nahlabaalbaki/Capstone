@@ -53,7 +53,6 @@ if(!isset($_SESSION["username"])){
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
@@ -67,7 +66,7 @@ if(!isset($_SESSION["username"])){
                     <div class="row justify-content-center">
                     <section id="team" class="team section-bg">
       <div class="container">
-
+        <br>
         <div class="section-title">
           <h2>Team</h2>
           <p style="font-size:20px;">Our Team is very well experienced in dealing with pets! Scroll to know more about our team members.</p>
@@ -89,7 +88,7 @@ if(!isset($_SESSION["username"])){
             </div>
           </div>
           <br>
-          <?php $count++;} ?>
+          <?php } ?>
 
         </div>
         
@@ -117,7 +116,9 @@ if(!isset($_SESSION["username"])){
                                             ?>
                                         
                                     </select>
-                                    <label for="duration"><h3>For how long would you like to leave your pet?</h3></label>
+                                    <label for="date"><h3>Which day would you like to bring your pet?</h3></label>
+                                    <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="date">
+                                    <label for="duration"><h3>How long would you like to leave your pet?</h3></label>
                                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="duration" id="duration">
                                         <option selected>Choose here</option>
                                         <option value="1">1 hour</option>

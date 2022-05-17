@@ -149,6 +149,8 @@ if(!isset($_SESSION["username"])){
                                 <i class="fas fa-table me-1"></i>
                                 Appointments Schedule
                             </div>
+                            <button class="bot"><a href="../AddAppointment/addappointment.php">Add New Slot</a></button>
+
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
