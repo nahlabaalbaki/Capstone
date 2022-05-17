@@ -161,6 +161,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Till</th>
                                             <th>Comments</th>
                                             <th>Owner ID</th>
+                                            <th></th>
                                         </tr>
                                       
                                     </thead>
@@ -172,6 +173,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Till</th>
                                             <th>Comments</th>
                                             <th>Owner ID</th>
+                                            <th></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -183,6 +185,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["end_date"];  ?></td>
                                                 <td><?php  echo $row["comments"];  ?></td>
                                                 <td><?php  echo $row["owner_id2"];  ?></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="deleteboarding.php?boarding_id=<?php echo $row['boarding_id']; ?>">Delete</a></button></td>
                                             </tr>
                                         <?php } ?>
                                         

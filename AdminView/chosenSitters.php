@@ -160,6 +160,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Date</th>
                                             <th>Duration</th>
                                             <th>Owner ID</th>
+                                            <th></th>
                                         </tr>
                                       
                                     </thead>
@@ -170,6 +171,7 @@ if(!isset($_SESSION["username"])){
                                             <th>Date</th>
                                             <th>Duration</th>
                                             <th>Owner ID</th>
+                                            <th></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -180,6 +182,7 @@ if(!isset($_SESSION["username"])){
                                                 <td><?php  echo $row["date"];  ?></td>
                                                 <td><?php  echo $row["duration"];  ?></td>
                                                 <td><?php  echo $row["owner_id6"];  ?></td>
+                                                <td><button class="bot btn"><a class="bot btn" href="deletesitter.php?sitter_id=<?php echo $row['sitter_id']; ?>">Delete</a></button></td>
                                             </tr>
                                         <?php } ?>
                                         

@@ -114,7 +114,7 @@ if(!isset($_SESSION["username"])){
                                             <option value="single">Single Room</option>
                                         </select>
 
-                                        <label for="inputBoarding">Form Date:</label> 
+                                        <label for="inputBoarding">From Date:</label> 
                                         <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="dateFrom" />
                            
                                         
