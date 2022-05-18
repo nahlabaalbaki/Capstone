@@ -3073,7 +3073,13 @@ textarea.form-control-lg {
   background-color: #A07178;
   border-color: #A07178;
 }
-
+.name input:checked {
+  border-color: #E6CCBE;
+  background-color:#E6CCBE;
+}
+/* .showpass input:checked ~ .mark {
+  background-color: #E6CCBE;
+} */
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;

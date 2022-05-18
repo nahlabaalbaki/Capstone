@@ -58,6 +58,9 @@ if(!isset($_SESSION["username"])){
                 <li>
                     <a href="../LandingPage/index.php#team">Team</a>
                 </li>
+                <li>
+                    <a class="getstarted scrollto" href="../Logout/logout.php">Logout</a>
+                </li>
             </ul>
         </div>
     </header>

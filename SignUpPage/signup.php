@@ -77,8 +77,8 @@ include("../connection.php");
                                                         title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"Required />
                                                     <label for="inputPassword">Password</label>
                                                     <div class="name"> 
-                                                    <input type="checkbox" onclick="myFunction()">
-                                                    Show Password
+                                                        <input type="checkbox" onclick="myFunction()">
+                                                        Show Password
                                                     </div>
                                                 </div>
                                             </div>
