@@ -50,7 +50,7 @@ $result = $connection->query($query);
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#services">Services</a></li>
           <li><a class="nav-link scrollto " href="../LandingPage/index.php#portfolio">Adoption</a></li>
           <li><a class="nav-link scrollto" href="../LandingPage/index.php#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="../LandingPage/index.php#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Feedback</a></li>
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
         

@@ -93,7 +93,7 @@ $results1 = $stmt1->get_result();
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Adoption</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../FeedbackPage/feedback.php">Feedback</a></li>
           <li><a class="getstarted scrollto" href="../Logout/logout.php">Logout</a></li>
         </ul>
       </nav><!-- .navbar -->
