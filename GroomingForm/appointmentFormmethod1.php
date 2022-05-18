@@ -46,10 +46,9 @@ if (isset($_POST['submit'])) {
 	//Change the owner_id3 in the query below from 10 to a dynamic id based on the current user logged in. y3ne badle l 10 be a variable
 	$mysql = "Update appointment set available=0,owner_id3='".$user["owner_id"]."',comments='$comments',type='$type' where date='$date' and time='$time'";
 
-	
 
-	$connection = mysqli_connect("localhost:3310", "root", "", "petshopdb");
-	if (mysqli_query($connection, $mysql)) {
+	$connection1 = mysqli_connect("localhost:3310", "root", "", "petshopdb");
+	if (mysqli_query($connection1, $mysql)) {
 		echo '<script type="text/javascript">
 
         window.onload = function () { alert("Data Updated successfully"); }
@@ -62,7 +61,7 @@ if (isset($_POST['submit'])) {
 
 		</script>';
 	}
-
+	$connection1->close();
 	
 	header("Location:../LandingPage/index.php");
 	

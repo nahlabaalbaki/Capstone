@@ -84,7 +84,7 @@ $result = $connection->query($query);
                                     <h3 class="text-center font-weight-light my-4">Book an appointment</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="appointmentFormmethod.php" method="post">
+                                    <form action="appointmentFormmethod1.php" method="post">
                                         <label for="inputGrooming">How would you like to pamper your pet?</label>
 
                                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
