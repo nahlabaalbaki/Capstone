@@ -95,7 +95,7 @@ if(!isset($_SESSION["username"])){
                                             </div>
                                             <label class="doc" for="inputDocument">Please upload all the required docuemnts. (National ID, Birth Certificate ...)</label><br>
                                             <div class="form-floating mb-3 doc">
-                                                <input  id="inputDocument" type="file" name="file" 
+                                                <input  id="inputDocument" type="file" name="file" accept=".pdf"
                                                     Required />
                                                 
                                             </div>

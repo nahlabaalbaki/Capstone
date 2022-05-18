@@ -73,8 +73,13 @@ include("../connection.php");
                                             <div class="col-md-6">
                                                 <div class="form-floating mb-3 mb-md-0">
                                                     <input class="form-control" id="inputPassword" type="password"
-                                                        name="password" placeholder="Create a password" Required />
+                                                        name="password"  placeholder="Create a password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                                                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"Required />
                                                     <label for="inputPassword">Password</label>
+                                                    <div class="name"> 
+                                                    <input type="checkbox" onclick="myFunction()">
+                                                    Show Password
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -136,6 +141,18 @@ include("../connection.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
     <script src="js/scripts.js"></script>
+
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("inputPassword");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
 </body>
 
 </html>
