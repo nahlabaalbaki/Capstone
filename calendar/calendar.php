@@ -115,12 +115,12 @@ if(!isset($_SESSION["username"])){
                                         </select>
 
                                         <label for="inputBoarding">From Date:</label> 
-                                        <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="dateFrom" />
+                                        <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="startdate" type="date" name="dateFrom" />
                            
                                         
                                         <div class="form-group">
                                             <label for="pwd"> Till Date:</label>
-                                            <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="dateTo"  />
+                                            <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="enddate" type="date" name="dateTo"  />
                                             
                                         </div>
 
@@ -173,5 +173,13 @@ if(!isset($_SESSION["username"])){
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="./evo-calendar/js/evo-calendar.min.js"></script>
     <script src="./demo/demo.js"></script>
+    <script>
+        $("#startdate").on("change", function(){
+        $("#enddate").attr("min", $(this).val());
+        });
+
+        $("#startdate").attr("min", new Date().toISOString().split("T")[0])
+
+    </script>
 </body>
 </html>
