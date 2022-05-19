@@ -3,10 +3,10 @@
 include("../connection.php");
 
 
-// if(!isset($_SESSION["username"])){
+if(!isset($_SESSION["username"])){
 
-//     header("Location:../LoginPage/login.php");
-//   }
+    header("Location:../LoginPage/login.php");
+  }
 $query = "SELECT DISTINCT date FROM appointment WHERE date>CURRENT_DATE and date<=CURRENT_DATE+7";
 
 $result = $connection->query($query);
@@ -121,7 +121,7 @@ $result = $connection->query($query);
 
                                         <div class="mt-4 mb-0">
                                             <!-- <input style="margin-left:9cm;" type="submit" name="submit" id="submit" class="button"> -->
-                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit"><a href="">Submit</a></button>
+                                            <button style="margin-left:8cm;" type="submit" name="submit" id="submit">Submit</a></button>
                                         </div>
                                     </form>
                                 </div>
