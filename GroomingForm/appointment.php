@@ -87,7 +87,7 @@ $result = $connection->query($query);
                                     <form action="appointmentFormmethod1.php" method="post">
                                         <label for="inputGrooming">How would you like to pamper your pet?</label>
 
-                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
+                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type" required>
                                             <option selected>Choose here</option>
                                             <option value="nails">Trim their nails</option>
                                             <option value="hair">Get a hair cut</option>
@@ -108,7 +108,7 @@ $result = $connection->query($query);
                                 
                                         <div class="form-group">
                                             <label for="pwd">Time</label>
-                                            <select name="time" id="time" class="form-control">
+                                            <select name="time" id="time" class="form-control" required>
                                                 <option>Select time</option>
                                             </select>
                                         </div>

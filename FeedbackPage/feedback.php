@@ -90,7 +90,7 @@ if(!isset($_SESSION["username"])){
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                             <label for="name">Rate</label>
-                                                <select class="form-control" name="rate" id="rate">
+                                                <select class="form-control" name="rate" id="rate" Required>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>

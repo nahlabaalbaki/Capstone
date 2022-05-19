@@ -104,7 +104,7 @@ if(!isset($_SESSION["username"])){
                                         <h2>10$ per hour</h2>
                                         <br>
                                     <label for="sitter"><h3>Who would you like to pet sit?</h3></label>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="name" id="name">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="name" id="name" required>
                                         <option selected>Choose here</option>
                                         <?php
                                             if ($result1->num_rows > 0) {
@@ -117,9 +117,9 @@ if(!isset($_SESSION["username"])){
                                         
                                     </select>
                                     <label for="date"><h3>Which day would you like to bring your pet?</h3></label>
-                                    <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="date">
+                                    <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" type="date" name="date" Required>
                                     <label for="duration"><h3>How long would you like to leave your pet?</h3></label>
-                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="duration" id="duration">
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="duration" id="duration" Required>
                                         <option selected>Choose here</option>
                                         <option value="1">1 hour</option>
                                         <option value="2">2 hours</option>

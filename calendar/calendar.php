@@ -114,25 +114,25 @@ if(!isset($_SESSION["username"])){
                                         
                                         <label for="inputBoarding">Which room do you prefer for your pet?</label>
 
-                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type">
+                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" name="type" id="type" Required>
                                             <option selected>Choose here</option>
                                             <option value="multi">Multiple Room</option>
                                             <option value="single">Single Room</option>
                                         </select>
 
                                         <label for="inputBoarding">From Date:</label> 
-                                        <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="startdate" type="date" name="dateFrom" />
+                                        <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="startdate" type="date" name="dateFrom" Required/>
                            
                                         
                                         <div class="form-group">
                                             <label for="pwd"> Till Date:</label>
-                                            <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="enddate" type="date" name="dateTo"  />
+                                            <input class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="enddate" type="date" name="dateTo"  Required/>
                                             
                                         </div>
 
                                         <label for="inputComments">Any comments:</label>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputComments" type="text" name="inputComments" placeholder="Elaborate about your pet" />
+                                            <input class="form-control" id="inputComments" type="text" name="inputComments" placeholder="Elaborate about your pet" Required/>
                                         </div>
                                 
 
